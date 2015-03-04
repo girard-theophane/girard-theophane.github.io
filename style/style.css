@@ -1,9 +1,6 @@
 
 .container {
-	min-height: 100%;
-	width:100%;
-	margin:0;
-	padding:0;
+
 }
 
 .presentation
@@ -37,7 +34,7 @@ header {
 {
 	margin: 0;
 }
-
+/*
 section
 {
 	height:100%;
@@ -51,7 +48,7 @@ section
 	padding-bottom: 100%;
 	min-height: 100%;
 }
-
+*/
 article
 {
 	border: 1px solid black;
