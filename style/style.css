@@ -49,6 +49,11 @@ section
 	min-height: 100%;
 }
 */
+
+body
+{
+	overflow-y:hidden;
+}
 article
 {
 	border: 1px solid black;
