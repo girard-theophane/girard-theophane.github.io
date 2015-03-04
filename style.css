@@ -9,6 +9,7 @@ body
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: #FAF7E0;
+	padding:10px;
 }
 
 .categories
@@ -24,8 +25,6 @@ header {
 	margin-top: 10px;
 //	margin-bottom: 10px;
 	text-align: center;
-	padding-left :10px;
-	padding-right :10px;
 	
 }
 
