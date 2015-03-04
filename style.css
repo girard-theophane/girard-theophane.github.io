@@ -5,6 +5,8 @@
 
 .presentation
 {
+	border: 2px solid black;
+	border-radius: 20px;
 	background-color: #D1B500;
 }
 
@@ -25,7 +27,7 @@ header {
 
 .photoProfil
 {
-	max-width: 50px;
+	max-width: 33%;
 	border: 2px solid black;
 	border-radius: 20px;
 }
