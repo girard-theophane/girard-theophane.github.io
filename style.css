@@ -1,13 +1,14 @@
 
-.container {
-
+body
+{
+	background-color: #F9E66B;
 }
 
 .presentation
 {
 	border: 1px solid black;
-	border-radius: 10px;
-	background-color: #F9E66B;
+	border-radius: 5px;
+	background-color: #FAF7E0;
 }
 
 .categories
