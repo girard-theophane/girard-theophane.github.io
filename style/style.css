@@ -10,6 +10,11 @@ html, body {
 	padding:0;
 }
 
+.presentation
+{
+	background-color: #D1B500;
+}
+
 .menu
 {
 	font-family: cursive;
