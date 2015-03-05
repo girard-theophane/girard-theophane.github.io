@@ -11,16 +11,13 @@ body
 	border-radius: 2px;
 	background-color: #E6F0F2;
 	padding:10px;
+	font-family: cursive;
 }
 
 .categories
 {
 
 
-}
-.menu
-{
-	font-family: cursive;
 }
 
 header {
