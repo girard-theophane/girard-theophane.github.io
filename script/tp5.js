@@ -27,7 +27,7 @@ $(function(){
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 		  $($idClique).animate({
-		      left: "-=980"
+		      left: "+=980"
 		    });
 		  });
 
