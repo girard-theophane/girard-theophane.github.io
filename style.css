@@ -24,10 +24,10 @@ ul
 {
 	text-align: center;
 }
-.categories
+
+a:hover
 {
-
-
+   background: url('img/fleche.png')
 }
 
 .photoProfil
