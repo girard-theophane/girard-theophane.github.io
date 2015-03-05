@@ -8,13 +8,13 @@ $(function(){
 
 		var $categories = $('article.aCacher');
 		$categories.hide();
-		/*$('a').click(function()
+		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).show("slow");
 		});
-		
+		/*
 		
 		$('a').click(function()
 		{
@@ -22,7 +22,8 @@ $(function(){
 			$categories.hide();
 			$($idClique).slideToggle('slow');
 		});
-		*/
+		
+		http://stackoverflow.com/questions/521291/jquery-slide-left-and-show
 		$('a').click(function() {
 			var $idClique = $(this).attr("href");
 			$categories.hide();
@@ -34,7 +35,7 @@ $(function(){
 		  );
 		  });
 
-		
+		*/
 		/*
 			EXERCICE 1 :
 			Masquer les items du menu déroulant.
