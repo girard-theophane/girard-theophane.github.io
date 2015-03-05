@@ -6,7 +6,7 @@
 // Au chargement de la page :
 $(function(){
 
-		$categories= $('article div');
+		var $categories= $('article div');
 		$categories.hide();
 		/*$('a').click(function()
 		{
