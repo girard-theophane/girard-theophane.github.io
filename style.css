@@ -12,6 +12,7 @@ body
 	background-color: #E6F0F2;
 	padding:10px;
 	font-family: cursive;
+	text-align: center;
 }
 
 .categories
@@ -22,8 +23,6 @@ body
 
 header {
 	margin-top: 10px;
-	text-align: center;
-	
 }
 
 .photoProfil
