@@ -14,13 +14,24 @@ $(function(){
 			$categories.hide();
 			$($idClique).show("slow");
 		});
-		*/
+		
+		
 		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).slideToggle('slow');
 		});
+		*/
+		$('a').click(function() {
+			var $idClique = $(this).attr("href");
+			$categories.hide();
+		  $($idClique).animate({
+		      left: "-=980"
+		    });
+		  });
+
+		
 		/*
 			EXERCICE 1 :
 			Masquer les items du menu déroulant.
