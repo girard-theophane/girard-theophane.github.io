@@ -8,12 +8,12 @@ $(function(){
 
 		var $categories = $('article.aCacher');
 		$categories.hide();
-		/*$('a').click(function()
+		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).show();
-		});*/
+		});
 		/*
 			EXERCICE 1 :
 			Masquer les items du menu déroulant.
