@@ -26,9 +26,7 @@ $(function(){
 		$('a').click(function() {
 			var $idClique = $(this).attr("href");
 			$categories.hide();
-		  $($idClique).animate({
-		      left: "+=980"
-		    });
+		  $($idClique).show('slide', {direction: 'right'}, 1000);
 		  });
 
 		
