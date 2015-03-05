@@ -12,7 +12,7 @@ $(function(){
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
-			$($idClique).show();
+			$($idClique).show("slow");
 		});
 		/*
 			EXERCICE 1 :
