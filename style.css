@@ -14,7 +14,7 @@ body
 	font-family: cursive;
 }
 
-.menu ul
+ul
 {
 	list-style-type: none;
 	line-height:3em;
