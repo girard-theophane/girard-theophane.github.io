@@ -8,11 +8,18 @@ $(function(){
 
 		var $categories = $('article.aCacher');
 		$categories.hide();
-		$('a').click(function()
+		/*$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).show("slow");
+		});
+		*/
+		$('a').click(function()
+		{
+			var $idClique = $(this).attr("href");
+			$categories.hide();
+			$($idClique).slideToggle('slow');
 		});
 		/*
 			EXERCICE 1 :
