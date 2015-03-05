@@ -26,7 +26,12 @@ $(function(){
 		$('a').click(function() {
 			var $idClique = $(this).attr("href");
 			$categories.hide();
-		  $($idClique).show('slide', {direction: 'right'}, 1000);
+		  $($idClique).show('slide', 
+		  {
+		  	direction: 'right'
+		  }, 
+		  1000
+		  );
 		  });
 
 		
