@@ -24,13 +24,13 @@ ul
 {
 	text-align: center;
 }
-
+/*
 a:hover
 {
 	background-position: left;
 	background: url('img/fleche.png') no-repeat;
 }
-
+*/
 .photoProfil
 {
 	margin-top: 10px;

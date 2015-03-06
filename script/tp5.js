@@ -14,6 +14,15 @@ $(function(){
 			$categories.hide();
 			$($idClique).show("slow");
 		});
+		
+		var $fleche = $('li img');
+		$fleche.hide();
+		/*$("a").hover(function(){
+			$(this).css("padding-left","30px");
+		},
+		function(){
+			$(this).css("padding-left","10px");
+		});*/
 		/*
 		
 		$('a').click(function()
