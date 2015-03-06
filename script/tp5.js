@@ -15,7 +15,7 @@ $(function(){
 		
 			var lienSurvolé = $(this).attr('class');
 			var $iNum = parseInt($lienSurvolé);
-			alert($lienSurvolé);
+			
 			switch ($iNum) 
 			{
 				case 1: 
@@ -41,6 +41,7 @@ $(function(){
 		
 		$('a').click(function()
 		{
+			alert($lienSurvolé);
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).show("slow");
