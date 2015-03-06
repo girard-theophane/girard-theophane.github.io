@@ -24,6 +24,13 @@ ul
 {
 	text-align: center;
 }
+
+li img
+{
+	width : 33%;
+	margin-right: 10px;
+}
+
 /*
 a:hover
 {
