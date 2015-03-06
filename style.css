@@ -27,7 +27,8 @@ ul
 
 li img
 {
-	width : 33%;
+	display: block;
+	max-width : 33%;
 	margin-right: 10px;
 }
 
