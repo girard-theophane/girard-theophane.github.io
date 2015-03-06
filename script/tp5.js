@@ -10,11 +10,10 @@ $(function(){
 				
 		var $fleche = $('li img');
 		$fleche.hide();
-		alert("virus.exe");
 		$("a").hover(function()
 		{
 		
-			var lienSurvolé = $(this).attr('class').text();
+			var lienSurvolé = $(this).attr('class');
 			var $iNum = parseInt($lienSurvolé);
 			alert($lienSurvolé);
 			switch ($iNum) 
