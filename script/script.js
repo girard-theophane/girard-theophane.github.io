@@ -9,6 +9,50 @@ $(function(){
 		var $categories = $('article.aCacher');
 		$categories.hide();
 		
+		
+		
+		// On récupère ds un objet jSon les propriété css d'origine pour réinitialiser à la fin de l'animation
+		var $categoriesDefaut = {
+			position : "relative", 					// Permet de déplacer la categories à partir de sa pos° d'origine
+			left:$categories.css("left"),				// décalage à gauche (0)
+			top:$categories.css("top"), 					// décalage en bas (0)
+			fontSize : $categories.css("font-size"), 	// Taille du texte
+			background:$categories.css("background"),	// Couleur de fond
+			padding:$categories.css("padding"), 			// marge			
+			width : $categories.width(),					// Largeur du bloc
+			height : $categories.height()				// Hauteur du bloc
+		}
+		
+		
+		
+		$("#cliquer-exemple").click(function(e){
+		
+			var $idClique = $(this).attr("href");
+			$categories.hide();
+
+			$($idClique).animate(
+					{left:200}, // modifie la position
+					1, // dure 1 seconde
+					function(){ // Fonction de callback
+					}
+				);
+			$($idClique).show();				
+			$categories.animate(
+					{right:200}, // modifie la position
+					1, // dure 1 seconde
+					function(){ // Fonction de callback
+					}
+				);	
+			return false ;
+		})
+		
+		
+		
+		
+		/*
+		
+		
+		
 		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
@@ -16,7 +60,7 @@ $(function(){
 			$($idClique).show("slow");
 		});
 
-		
+		*/
 		
 		/*
 		
