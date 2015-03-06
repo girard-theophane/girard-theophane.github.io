@@ -16,13 +16,22 @@ $(function(){
 		});
 		
 		var $fleche = $('li img');
-		//$fleche.hide();
-		/*$("a").hover(function(){
-			$(this).css("padding-left","30px");
+		$fleche.hide();
+		$("a").hover(function(){
+		var lienSurvolé = $(this).attr('class').text();
+		var $iNum = parseInt($lienSurvolé);
+			switch (iNum) 
+			{
+				case 1: $fleche.hide(); $('#1').show(); break;
+				case 2: $fleche.hide(); $('#2').show(); break;
+				case 3: $fleche.hide(); $('#3').show(); break;
+				case 4: $fleche.hide(); $('#4').show(); break;
+				default: $fleche.hide();
+			}
 		},
 		function(){
-			$(this).css("padding-left","10px");
-		});*/
+			//$(this).css("padding-left","10px");
+		});
 		/*
 		
 		$('a').click(function()
