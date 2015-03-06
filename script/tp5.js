@@ -13,8 +13,9 @@ $(function(){
 		$("a").hover(function()
 		{
 		
-			var lienSurvolé = $(this).attr('class');
-			var $iNum = parseInt($lienSurvolé);
+			var $lienSurvolé = $(this).attr('class');
+			var $iNum = $lienSurvolé.split('.');
+			$lienSurvolé.parseInt($iNum);
 			
 			switch ($iNum) 
 			{
