@@ -35,8 +35,7 @@ $(function(){
 					1, // dure 1 seconde
 					function(){ // Fonction de callback
 					}
-				);
-			$($idClique).show();				
+				);				
 			$categories.animate(
 					{right:200}, // modifie la position
 					1, // dure 1 seconde
