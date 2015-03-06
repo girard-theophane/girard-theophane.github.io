@@ -28,8 +28,8 @@ ul
 li img
 {
 	display: block;
-	max-width : 33%;
-	margin-right: 10px;
+	width : 33%;
+	margin-right: 100px;
 }
 
 /*
