@@ -31,13 +31,14 @@ li img
 	margin-right: 10px;
 }
 
-/*
+
 a:hover
 {
 	background-position: left;
 	background: url('img/fleche.png') no-repeat;
+	float:left;
 }
-*/
+
 .photoProfil
 {
 	margin-top: 10px;
