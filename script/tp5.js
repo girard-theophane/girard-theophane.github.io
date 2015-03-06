@@ -19,16 +19,16 @@ $(function(){
 			switch ($iNum) 
 			{
 				case 1: 
-					$('li #1').show(); 
+					$('img #1').show(); 
 				break;
 				case 2: 
-					$('li #2').show(); 
+					$('img #2').show(); 
 				break;
 				case 3: 
-					$('li #3').show(); 
+					$('img #3').show(); 
 				break;
 				case 4: 
-					$('li #4').show(); 
+					$('img #4').show(); 
 				break;
 			}
 		}, function()
