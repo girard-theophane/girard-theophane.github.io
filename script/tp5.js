@@ -17,7 +17,7 @@ $(function(){
 		
 		var $fleche = $('li img');
 		$fleche.hide();
-		$("a").hover(function(){
+	/*	$("a").hover(function(){
 		var lienSurvolé = $(this).attr('class').text();
 		var $iNum = parseInt($lienSurvolé);
 			switch (iNum) 
@@ -32,6 +32,8 @@ $(function(){
 		function(){
 			//$(this).css("padding-left","10px");
 		});
+		
+		*/
 		/*
 		
 		$('a').click(function()
