@@ -25,7 +25,7 @@ $(function(){
 		
 		
 		
-		$("#cliquer-exemple").click(function(e){
+		$("a").click(function(e){
 		
 			var $idClique = $(this).attr("href");
 			$categories.hide();
@@ -50,6 +50,51 @@ $(function(){
 		
 		
 		/*
+		
+		
+		
+		
+		
+				$("#cliquer-exemple").click(function(e){
+		
+			var $idClique = $(this).attr("href");
+			$categories.hide();
+
+			$(".block").animate({
+				"left": "+=50px"
+			}, 
+				{
+					duration: 1000, easing: 'easeOutElastic'
+				});
+			});
+			$("#left").click(function(){
+				$(".block").animate(
+					{
+						"left": "-=50px"
+					}, 
+					{
+						duration: 1000, easing: 'easeOutElastic'
+					});
+			});
+		});
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
