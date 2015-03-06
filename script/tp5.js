@@ -5,26 +5,7 @@
 
 // Au chargement de la page :
 $(function(){
-		
-		
-				
-		var $fleche = $('li img');
-		$fleche.hide();
-		$("a").hover(function()
-		{
-		
-			var $lienSurvole = $(this).attr('class').text();
-			alert($lienSurvole);
-
 			
-			
-			
-			
-		}, function()
-		{
-			$fleche.hide();
-		});
-		
 		var $categories = $('article.aCacher');
 		$categories.hide();
 		
