@@ -13,25 +13,13 @@ $(function(){
 		$("a").hover(function()
 		{
 		
-			var $lienSurvolé = $(this).attr('class');
-			var $iNum = $lienSurvolé.split('.');
-			$lienSurvolé.parseInt($iNum);
+			var $lienSurvole = $(this).attr('class').text();
+			alert($lienSurvole);
+
 			
-			switch ($iNum) 
-			{
-				case 1: 
-					$('img #1').show(); 
-				break;
-				case 2: 
-					$('img #2').show(); 
-				break;
-				case 3: 
-					$('img #3').show(); 
-				break;
-				case 4: 
-					$('img #4').show(); 
-				break;
-			}
+			
+			
+			
 		}, function()
 		{
 			$fleche.hide();
@@ -42,7 +30,6 @@ $(function(){
 		
 		$('a').click(function()
 		{
-			alert($iNum);
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).show("slow");
