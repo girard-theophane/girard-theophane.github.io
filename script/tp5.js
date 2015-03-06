@@ -31,7 +31,6 @@ $(function(){
 				case 4: 
 					$('#4').show(); 
 				break;
-				default: $fleche.hide();
 			}
 		}, function()
 		{
