@@ -5,16 +5,9 @@
 
 // Au chargement de la page :
 $(function(){
-
-		var $categories = $('article.aCacher');
-		$categories.hide();
-		$('a').click(function()
-		{
-			var $idClique = $(this).attr("href");
-			$categories.hide();
-			$($idClique).show("slow");
-		});
 		
+		
+				
 		var $fleche = $('li img');
 		$fleche.hide();
 		
@@ -23,7 +16,6 @@ $(function(){
 		
 			var lienSurvolé = $(this).attr('class').text();
 			
-			alert($lienSurvolé);
 		
 			/*
 			var $iNum = parseInt($lienSurvolé);
@@ -40,6 +32,19 @@ $(function(){
 		function(){
 			//$(this).css("padding-left","10px");
 		});
+		
+		var $categories = $('article.aCacher');
+		$categories.hide();
+		
+		$('a').click(function()
+		{
+		
+			alert($lienSurvolé);
+			var $idClique = $(this).attr("href");
+			$categories.hide();
+			$($idClique).show("slow");
+		});
+
 		
 		
 		/*
