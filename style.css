@@ -27,7 +27,8 @@ ul
 
 a:hover
 {
-   background: url('img/fleche.png') no-repeat;
+	background-position: left;
+	background: url('img/fleche.png') no-repeat;
 }
 
 .photoProfil
