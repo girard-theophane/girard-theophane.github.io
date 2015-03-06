@@ -17,8 +17,11 @@ $(function(){
 		
 		var $fleche = $('li img');
 		$fleche.hide();
-	/*	$("a").hover(function(){
+		$("a").hover(function(){
 		var lienSurvolé = $(this).attr('class').text();
+		alert($lienSurvolé);
+		
+		/*
 		var $iNum = parseInt($lienSurvolé);
 			switch (iNum) 
 			{
@@ -28,12 +31,12 @@ $(function(){
 				case 4: $fleche.hide(); $('#4').show(); break;
 				default: $fleche.hide();
 			}
-		},
+		},*/
 		function(){
 			//$(this).css("padding-left","10px");
 		});
 		
-		*/
+		
 		/*
 		
 		$('a').click(function()
