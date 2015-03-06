@@ -27,35 +27,7 @@ $(function(){
 		
 		$("a").click(function(e){
 		
-			var $idClique = $(this).attr("href");
-			$categories.hide();
-
-			$($idClique).animate(
-					{left:200}, // modifie la position
-					1, // dure 1 seconde
-					function(){ // Fonction de callback
-					}
-				);				
-			$categories.animate(
-					{right:200}, // modifie la position
-					1, // dure 1 seconde
-					function(){ // Fonction de callback
-					}
-				);	
-			return false ;
-		})
-		
-		
-		
-		
-		/*
-		
-		
-		
-		
-		
-				$("#cliquer-exemple").click(function(e){
-		
+			
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 
@@ -80,20 +52,7 @@ $(function(){
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		/*
 		
 		
 		
