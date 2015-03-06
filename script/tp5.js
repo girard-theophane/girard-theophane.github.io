@@ -10,7 +10,7 @@ $(function(){
 				
 		var $fleche = $('li img');
 		$fleche.hide();
-		
+		alert("virus.exe");
 		$("a").hover(function()
 		{
 		
