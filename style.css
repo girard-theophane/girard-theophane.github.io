@@ -34,9 +34,8 @@ li img
 
 a:hover
 {
-	background-position: left;
+	background-position: -89px 0;
 	background: url('img/fleche.png') no-repeat;
-	float:left;
 }
 
 .photoProfil
