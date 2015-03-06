@@ -16,7 +16,7 @@ $(function(){
 		
 			var lienSurvolé = $(this).attr('class').text();
 			var $iNum = parseInt($lienSurvolé);
-			
+			alert($lienSurvolé);
 			switch ($iNum) 
 			{
 				case 1: 
