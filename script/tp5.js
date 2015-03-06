@@ -41,7 +41,7 @@ $(function(){
 		
 		$('a').click(function()
 		{
-			alert($lienSurvolé);
+			alert($iNum);
 			var $idClique = $(this).attr("href");
 			$categories.hide();
 			$($idClique).show("slow");
