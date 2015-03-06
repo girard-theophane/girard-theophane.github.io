@@ -16,7 +16,7 @@ $(function(){
 		});
 		
 		var $fleche = $('li img');
-		$fleche.hide();
+		//$fleche.hide();
 		/*$("a").hover(function(){
 			$(this).css("padding-left","30px");
 		},
