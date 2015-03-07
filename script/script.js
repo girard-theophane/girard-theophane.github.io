@@ -13,7 +13,7 @@ $(function(){
 		{
 			var $idClique = $(this).attr("href");
 			
-			if($($idClique).hasClass("active")
+			if($($idClique).hasClass("active"))
 			{
 				$categories.hide();
 				$($idClique).slideToggle(700);
