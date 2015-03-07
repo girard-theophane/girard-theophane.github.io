@@ -16,7 +16,7 @@ $(function(){
 			if($($idClique).hasClass("active"))
 			{
 				$categories.hide();
-				$($idClique).hide("slow");
+				$($idClique).hide(1000);
 				$(".active").removeClass("active");
 			}
 			else
