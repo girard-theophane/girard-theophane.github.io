@@ -26,10 +26,10 @@ $(function(){
 			$(".active").slideToggle(750);
 			$($idClique).removeClass("active");
 			
-			$(this).click(function()
+			$('a').click(function()
 			{
 				$($idClique).slideToggle(750);
-			}
+			});
 		});
 
 /*
