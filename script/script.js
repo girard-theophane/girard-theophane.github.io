@@ -23,7 +23,7 @@ $(function(){
 			{
 				$categories.hide();
 				$($idClique).addClass("active");
-				$(".active").slideDown(750);
+				$(".active").slideToggle(750);
 			}
 		});
 
