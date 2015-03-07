@@ -13,17 +13,18 @@ $(function(){
 		{
 			var $idClique = $(this).attr("href");
 			
-			if($($idClique).hasClass("active"))
+			$(".aCacher").each(function(index, value) {
+				if($($idClique).hasClass("active"))
 			{
 				$($idClique).slideToggle(1000);
 				$(".active").removeClass("active");
 			}
-			else
-			{
-				$categories.hide();
-				$($idClique).addClass("active");
-				$(".active").slideToggle(750);
-			}
+			});
+			
+			$categories.hide();
+			$($idClique).addClass("active");
+			$(".active").slideToggle(750);
+			
 		});
 
 /*
