@@ -19,11 +19,13 @@ $(function(){
 				$($idClique).slideToggle(1000);
 				$(".active").removeClass("active");
 			}
+			else
+			{
+				$categories.hide();
+				$($idClique).addClass("active");
+				$(".active").slideToggle(750);
+			}
 			});
-			
-			$categories.hide();
-			$($idClique).addClass("active");
-			$(".active").slideToggle(750);
 			
 		});
 
