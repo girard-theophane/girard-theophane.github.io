@@ -26,6 +26,10 @@ $(function(){
 			$(".active").slideToggle(750);
 			$($idClique).removeClass("active");
 			
+			$(this).click(function()
+			{
+				$($idClique).slideToggle(750);
+			}
 		});
 
 /*
