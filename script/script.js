@@ -10,7 +10,7 @@ $(function(){
 		$categories.hide();
 		
 		
-		
+		/*
 		// On récupère ds un objet jSon les propriété css d'origine pour réinitialiser à la fin de l'animation
 		var $categoriesDefaut = {
 			position : "relative", 					// Permet de déplacer la categories à partir de sa pos° d'origine
@@ -50,10 +50,9 @@ $(function(){
 		});
 		
 		
+		*/
 		
-		
-		/*
-		
+
 		
 		
 		$('a').click(function()
@@ -63,7 +62,7 @@ $(function(){
 			$($idClique).show("slow");
 		});
 
-		*/
+	
 		
 		/*
 		
