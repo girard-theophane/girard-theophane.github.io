@@ -13,7 +13,7 @@ $(function(){
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
-			$($idClique).toggle("slide",1000);
+			$($idClique).toggle( "slide" );
 		});
 
 /*
