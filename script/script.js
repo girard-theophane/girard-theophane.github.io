@@ -12,10 +12,12 @@ $(function(){
 		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
+			$idClique.addClass("active");
 			$categories.hide();
-			$($idClique).slideDown(750, function(){
+			$(".active").slideDown(750, function(){
 				$('a').click(function(){
-					$($idClique).slideToggle(700);
+					$(".active").slideToggle(700);
+					$(".active").removeClass();
 				});
 			});
 		});
