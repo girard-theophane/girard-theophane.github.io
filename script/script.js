@@ -16,7 +16,7 @@ $(function(){
 			$(".aCacher").each(function(index, value) {
 				if($(this).hasClass("active"))
 				{
-					$($idClique).hide(1000);
+					$($idClique).hide(750);
 					$(".active").removeClass("active");
 				}
 				else
