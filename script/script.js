@@ -17,7 +17,7 @@ $(function(){
 			$(".active").slideDown(750, function(){
 				$('a').click(function(){
 					$(".active").slideToggle(700);
-					$(".active").removeClass();
+					$(".active").removeClass("active");
 				});
 			});
 		});
