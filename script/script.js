@@ -15,7 +15,7 @@ $(function(){
 			
 			if($($idClique).hasClass("active"))
 			{
-				$($idClique).hide(1000);
+				$($idClique).slideToggle(1000);
 				$(".active").removeClass("active");
 			}
 			else
