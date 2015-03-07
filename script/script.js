@@ -8,9 +8,9 @@ $(function(){
 			
 		var $categories = $('article.aCacher');
 		$categories.hide();
-		
-		
 		/*
+		
+		
 		// On récupère ds un objet jSon les propriété css d'origine pour réinitialiser à la fin de l'animation
 		var $categoriesDefaut = {
 			position : "relative", 					// Permet de déplacer la categories à partir de sa pos° d'origine
@@ -49,8 +49,8 @@ $(function(){
 			});
 		});
 		
-		
 		*/
+		
 		
 
 		
@@ -59,9 +59,8 @@ $(function(){
 		{
 			var $idClique = $(this).attr("href");
 			$categories.hide();
-			$($idClique).show("slow");
+			$($idClique).slideToggle(300);
 		});
-
 	
 		
 		/*
