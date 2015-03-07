@@ -16,17 +16,15 @@ $(function(){
 			$(".aCacher").each(function(index, value) {
 				if($(this).hasClass("active"))
 				{
-					$($idClique).hide(750);
-					$(".active").removeClass("active");
-				}
-				else
-				{
-					$categories.hide();
-					$($idClique).addClass("active");
-					$(".active").slideToggle(750);
-					$(".active").removeClass("active");
+					$(this).hide(750);
+					$(this).removeClass("active");
 				}
 			});
+			
+			$categories.hide();
+			$($idClique).addClass("active");
+			$(".active").slideToggle(750);
+			$($idClique).removeClass("active");
 			
 		});
 
