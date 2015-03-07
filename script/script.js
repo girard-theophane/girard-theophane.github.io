@@ -12,10 +12,8 @@ $(function(){
 		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
-			var $options = { to: { width: 200, height: 60 } };
-			
 			$categories.hide();
-			$($idClique).toggle('slide',option,500 );
+			$($idClique).toggle("slide",1000);
 		});
 
 /*
