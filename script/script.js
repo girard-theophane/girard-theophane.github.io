@@ -12,7 +12,7 @@ $(function(){
 		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
-			$idClique.addClass("active");
+			$($idClique).addClass("active");
 			$categories.hide();
 			$(".active").slideDown(750, function(){
 				$('a').click(function(){
