@@ -17,7 +17,7 @@ $(function(){
 			{
 				$categories.hide();
 				$($idClique).slideToggle(700);
-				$($idClique).removeClass("active");
+				$(".active").removeClass("active");
 			}
 			else
 			{
