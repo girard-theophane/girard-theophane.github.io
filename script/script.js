@@ -8,9 +8,17 @@ $(function(){
 			
 		var $categories = $('article.aCacher');
 		$categories.hide();
-		/*
-		
-		
+				
+		$('a').click(function()
+		{
+			var $idClique = $(this).attr("href");
+			var $options = { to: { width: 200, height: 60 } };
+			
+			$categories.hide();
+			$($idClique).toggle(slide,option,500 );
+		});
+
+/*
 		// On récupère ds un objet jSon les propriété css d'origine pour réinitialiser à la fin de l'animation
 		var $categoriesDefaut = {
 			position : "relative", 					// Permet de déplacer la categories à partir de sa pos° d'origine
@@ -53,16 +61,10 @@ $(function(){
 		
 		
 
-		
-		
-		$('a').click(function()
-		{
-			var $idClique = $(this).attr("href");
-			$categories.hide();
-			$($idClique).slideToggle(300);
-		});
+		/*
+
 	
-		
+		*/
 		/*
 		
 		$('a').click(function()
