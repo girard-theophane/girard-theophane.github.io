@@ -13,6 +13,7 @@ $(function(){
 		{
 			var $idClique = $(this).attr("href");
 			
+			$(".aCacher").each(function(index, value) {
 				if($(this).hasClass("active"))
 				{
 					$($idClique).hide(1000);
@@ -25,6 +26,7 @@ $(function(){
 					$(".active").slideToggle(750);
 					$(".active").removeClass("active");
 				}
+			});
 			
 		});
 
