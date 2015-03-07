@@ -15,7 +15,7 @@ $(function(){
 			var $options = { to: { width: 200, height: 60 } };
 			
 			$categories.hide();
-			$($idClique).toggle(slide,option,500 );
+			$($idClique).toggle('slide',option,500 );
 		});
 
 /*
