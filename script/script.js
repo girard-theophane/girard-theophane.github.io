@@ -12,14 +12,19 @@ $(function(){
 		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
-			$($idClique).addClass("active");
-			$categories.hide();
-			$(".active").slideDown(750, function(){
-				$('a').click(function(){
-					$(".active").slideToggle(700);
-					$(".active").removeClass("active");
-				});
-			});
+			
+			if($($idClique).hasClass("active")
+			{
+				$categories.hide();
+				$($idClique).slideToggle(700);
+				$($idClique).removeClass("active");
+			}
+			else
+			{
+				$categories.hide();
+				$($idClique).addClass("active");
+				$(".active").slideDown(750);
+			}
 		});
 
 /*
