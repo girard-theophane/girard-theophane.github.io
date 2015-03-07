@@ -15,7 +15,7 @@ $(function(){
 			$categories.hide();
 			$($idClique).slideToggle(750, function(){
 				$('a').click(function(){
-					$($idClique).slideToggle(700, function(){
+					$($idClique).slideToggle(700);
 				});
 			});
 		});
