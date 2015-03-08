@@ -12,38 +12,15 @@ $(function(){
 		$('a').click(function()
 		{		
 			var $idClique = $(this).attr("href");
+			
+			//fait disparaitre la categorie actuellement affichée
 			$(".active").slideToggle();
 			$(".active").removeClass("active");
 
-			
+			//fait apparaitre la categorie souhaitée
 			$($idClique).delay(1000).slideToggle();
 			$($idClique).addClass('active');
-		});		
-				
-				/*
-		$('a').click(function()
-		{
-			var $idClique = $(this).attr("href");
-			
-			$(".aCacher").each(function(index, value) {
-				if($(this).hasClass("active"))
-				{
-					$(this).hide(750);
-					$(this).removeClass("active");
-				}
-			});
-			
-			$categories.hide();
-			$($idClique).addClass("active");
-			$(".active").slideToggle(750);
-			
-			$('.active').click(function()
-			{
-				$($idClique).slideToggle(750);			
-				$($idClique).removeClass("active");
-			});
-		});
-*/
+		});	
 
 }); // Fin des instructions envoyées au chargement de la page
 	
