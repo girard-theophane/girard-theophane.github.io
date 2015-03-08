@@ -12,7 +12,7 @@ $(function(){
 		$('a').click(function()
 		{		
 			var $idClique = $(this).attr("href");	
-			$categories.hide();
+		//	$categories.hide();
 			$($idClique).animate({
 				left: '350px'
 			}, 400, 'easeOutBack'); 	
