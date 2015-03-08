@@ -10,6 +10,16 @@ $(function(){
 		$categories.hide();
 				
 		$('a').click(function()
+		{		
+			var $idClique = $(this).attr("href");	
+			$categories.hide();
+			$($idClique).animate({
+				left: '350px'
+			}, 400, 'easeOutBack'); 	
+		});		
+				
+				/*
+		$('a').click(function()
 		{
 			var $idClique = $(this).attr("href");
 			
@@ -31,7 +41,7 @@ $(function(){
 				$($idClique).removeClass("active");
 			});
 		});
-
+*/
 
 }); // Fin des instructions envoyées au chargement de la page
 	
