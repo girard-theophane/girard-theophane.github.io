@@ -18,7 +18,7 @@ $(function(){
 			$(".active").removeClass("active");
 
 			//fait apparaitre la categorie souhaitée
-			$($idClique).delay(1000).slideToggle();
+			$($idClique).delay(750).slideToggle();
 			$($idClique).addClass('active');
 		});	
 
