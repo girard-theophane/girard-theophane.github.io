@@ -12,8 +12,9 @@ $(function(){
 		$('a').click(function()
 		{		
 			var $idClique = $(this).attr("href");
-			$(".active").removeClass("active");
 			$(".active").slideToggle();
+			$(".active").removeClass("active");
+
 			
 			$($idClique).delay(1000).slideToggle();
 			$($idClique).addClass('active');
