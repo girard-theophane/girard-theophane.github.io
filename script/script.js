@@ -13,7 +13,8 @@ $(function(){
 		{		
 			var $idClique = $(this).attr("href");	
 		//	$categories.hide();
-			$($idClique).animate({left: '350px'}); 	
+		//	$($idClique).animate({left: '350px'}); 	
+			$($idClique).slideToggle();
 		});		
 				
 				/*
