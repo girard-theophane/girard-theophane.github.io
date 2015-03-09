@@ -31,7 +31,7 @@ ul
 	margin: 10px;
 }
 
-a:hover
+.menu a:hover
 {
 	background: url('img/fleche.png') no-repeat 20px;
 	margin-left: -50px;
