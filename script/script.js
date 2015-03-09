@@ -21,7 +21,7 @@ $(function(){
 			//fait apparaitre la categorie souhaitée
 			$($idClique).delay(750).slideToggle();
 			$('#contact a').hide();
-			$('#contact a').first().delay(2000).show('slow', function showNextOne() {
+			$('#contact a').first().delay(2500).show('slow', function showNextOne() {
 			$(this).next('#contact a').show('slow', showNextOne);
 			});
 			$($idClique).addClass('active');
