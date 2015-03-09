@@ -24,7 +24,7 @@ $(function(){
 			if($idClique == "#contact")
 			{
 				$('#contact a').hide();
-				$('#contact a').first().delay(2800).show('slow', function showNextOne() {
+				$('#contact a').first().delay(1000).show('slow', function showNextOne() {
 				$(this).next('#contact a').show('slow', showNextOne);
 				});
 			}

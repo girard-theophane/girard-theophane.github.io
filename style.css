@@ -13,6 +13,20 @@ body
 	padding:10px;
 	font-family: cursive;
 }
+	
+	.menu h3
+	{
+		text-align: center;
+	}
+		
+		.menu a:hover
+		{
+			background: url('img/fleche.png') no-repeat 20px;
+			margin-left: -50px;
+			padding-left: 50px;
+			text-decoration: none;
+			color: black;
+		}
 
 ul
 {
@@ -20,24 +34,10 @@ ul
 	line-height:3em;
 }
 
-.menu h3
-{
-	text-align: center;
-}
-
 #contact img
 {
 	width: 60px;
 	margin: 20px;
-}
-
-.menu a:hover
-{
-	background: url('img/fleche.png') no-repeat 20px;
-	margin-left: -50px;
-	padding-left: 50px;
-	text-decoration: none;
-	color: black;
 }
 
 .photoProfil
@@ -53,8 +53,13 @@ ul
 
 #contact
 {
-	padding-bottom: 20%;
+	padding-bottom: 10%;
 }
+
+	#contact h3
+	{
+		padding-bottom: 10%;
+	}
 
 .row
 {
