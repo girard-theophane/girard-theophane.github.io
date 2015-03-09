@@ -8,6 +8,7 @@ $(function(){
 			
 		var $categories = $('article.aCacher');
 		$categories.hide();
+		$(".active").show();
 				
 		$('a').click(function()
 		{		
