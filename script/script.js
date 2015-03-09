@@ -17,6 +17,7 @@ $(function(){
 			//fait disparaitre la categorie actuellement affichée
 			$(".active").slideToggle();
 			$(".active").removeClass("active");
+			$(".cliqué").removeClass("cliqué");
 
 			//fait apparaitre la categorie souhaitée
 			$($idClique).delay(750).slideToggle();
@@ -29,6 +30,7 @@ $(function(){
 				});
 			}
 			$($idClique).addClass('active');
+			$(this).addClass("cliqué");
 		});	
 
 }); // Fin des instructions envoyées au chargement de la page
