@@ -20,6 +20,9 @@ $(function(){
 
 			//fait apparaitre la categorie souhaitée
 			$($idClique).delay(750).slideToggle();
+			$('#contact img').first().show('slow', function showNextOne() {
+			$(this).next('img').show('slow', showNextOne);
+			});
 			$($idClique).addClass('active');
 		});	
 
