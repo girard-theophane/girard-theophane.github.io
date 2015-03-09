@@ -27,6 +27,15 @@ body
 			text-decoration: none;
 			color: black;
 		}
+		
+		.menu a:focus
+		{
+			background: url('img/fleche.png') no-repeat 20px;
+			margin-left: -50px;
+			padding-left: 50px;
+			text-decoration: none;
+			color: black;
+		}
 
 ul
 {
