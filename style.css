@@ -25,6 +25,12 @@ ul
 	text-align: center;
 }
 
+.imageContact img
+{
+	width: 20px;
+	margin: 10px;
+}
+
 a:hover
 {
 	background: url('img/fleche.png') no-repeat 20px;
