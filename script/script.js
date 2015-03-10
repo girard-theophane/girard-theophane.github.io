@@ -26,8 +26,8 @@ $(function(){
 			{
 				$('#contact a').hide();
 				$('#contact a').first().delay(1300).show('slow');
-				$('#contact a').second().delay(750).show('slow');
-				$('#contact a').third().delay(750).show('slow');
+				$('#contact a').eq(1).delay(750).show('slow');
+				$('#contact a').eq(2).delay(750).show('slow');
 			}
 			$($idClique).addClass('active');
 			$(this).addClass("cliqué");
