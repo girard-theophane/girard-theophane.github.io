@@ -25,14 +25,16 @@ $(function(){
 			if($idClique == "#contact")
 			{
 				$('#contact a').hide();
-				$('#contact a').first().delay(1300).show('slow', function showNextOne() {
-				$(this).next('#contact a').show('slow', showNextOne);
-				});
+				$('#contact a').first().delay(1300).show('slow');
+				$('#contact a').second().delay(750).show('slow');
+				$('#contact a').third().delay(750).show('slow');
 			}
 			$($idClique).addClass('active');
 			$(this).addClass("cliqué");
 		});	
-
+/*	$('#contact a').first().delay(1300).show('slow', function showNextOne() {
+				$(this).next('#contact a').show('slow', showNextOne);
+				});*/
 }); // Fin des instructions envoyées au chargement de la page
 	
 
