@@ -25,9 +25,9 @@ $(function(){
 			if($idClique == "#contact")
 			{
 				$('#contact a').hide();
-				$('#contact a').eq(0).delay(1500).fadeIn();
-				$('#contact a').eq(1).delay(2000).fadeIn();
-				$('#contact a').eq(2).delay(2500).fadeIn();
+				$('#contact a').eq(0).delay(1600).fadeIn();
+				$('#contact a').eq(1).delay(2100).fadeIn();
+				$('#contact a').eq(2).delay(2600).fadeIn();
 			}
 			$($idClique).addClass('active');
 			$(this).addClass("cliqué");
