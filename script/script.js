@@ -4,12 +4,7 @@
 */
 
 // Au chargement de la page :
-$(function(){
-			
-		function showHide(){
-			alert('hihi');
-		}	
-			
+$(function(){		
 		var $categories = $('article.aCacher');
 		$categories.hide();
 		$(".active").show();
@@ -35,7 +30,6 @@ $(function(){
 			}
 			$($idClique).addClass('active');
 			$(this).addClass("cliqué");
-			showHide();
 		});	
 /*	$('#contact a').first().delay(1300).show('slow', function showNextOne() {
 				$(this).next('#contact a').show('slow', showNextOne);
