@@ -35,7 +35,7 @@ $(function(){
 			}
 			$($idClique).addClass('active');
 			$(this).addClass("cliqué");
-			$showHide();
+			showHide();
 		});	
 /*	$('#contact a').first().delay(1300).show('slow', function showNextOne() {
 				$(this).next('#contact a').show('slow', showNextOne);
