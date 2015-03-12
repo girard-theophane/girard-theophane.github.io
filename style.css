@@ -8,7 +8,7 @@ body
 
 .menu
 {
-	border: 1px solid black;
+	border: 3px solid black;
 	border-radius: 2px;
 	background-color: #E6F0F2;
 	padding:10px;
@@ -86,7 +86,7 @@ ul
 
 article
 {
-	border: 1px solid black;
+	border: 3px solid black;
 	border-radius: 2px;
 	background-color: #E6F0F2;
 	padding:10px;
