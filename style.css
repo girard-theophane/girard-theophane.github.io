@@ -58,10 +58,10 @@ ul
 	margin: 20px;
 }
 
-.imageContact
-{
-	margin: 33%;
-	text-align: center;
+.iconeContact {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
 }
 
 .photoProfil
