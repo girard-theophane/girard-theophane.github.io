@@ -84,11 +84,16 @@ body
 		line-height:3em;
 		padding-left: 8%;
 	}
-		.aCacher ul .sujet
+		.aCacher ville
 		{
 			line-height:3em;
 			padding-left: 4%;
 		}
+			.aCacher ville
+			{
+				line-height:3em;
+				padding-left: 4%;
+			}
 
 
 .sujet
