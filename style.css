@@ -82,17 +82,17 @@ body
 	.aCacher ul
 	{
 		line-height:3em;
-		padding-left: 8%;
+		padding-left: 4%;
 	}
-		.aCacher ville
+		.aCacher lieu
 		{
 			line-height:3em;
-			padding-left: 4%;
+			padding-left: 8%;
 		}
 			.aCacher ville
 			{
 				line-height:3em;
-				padding-left: 4%;
+				padding-left: 8%;
 			}
 
 
