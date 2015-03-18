@@ -87,14 +87,14 @@ body
 		.aCacher lieu
 		{
 			line-height:3em;
-			padding-left: 8%;
-			margin-left: 8%;
+			position: relative;
+			left: 8%;
 		}
 			.aCacher ville
 			{
 				line-height:3em;
-				padding-left: 8%;
-				margin-left: 8%;
+				position: relative;
+				left: 8%;
 			}
 
 
