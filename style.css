@@ -80,6 +80,11 @@ body
 	line-height:3em;
 }
 
+.lieu
+{
+	text-align:center;
+	white-space:nowrap;
+}
 
 #contact
 {
