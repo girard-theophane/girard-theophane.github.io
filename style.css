@@ -86,12 +86,14 @@ body
 	}
 		.aCacher lieu
 		{
+			display: block;
 			line-height:3em;
 			position: relative;
 			left: 8%;
 		}
 			.aCacher ville
 			{
+				display: block;
 				line-height:3em;
 				position: relative;
 				left: 8%;
