@@ -79,17 +79,17 @@ body
 {
 	margin-left: 3%;
 }
-
-	.aCacher ul .sujet
+	.aCacher ul
 	{
 		line-height:3em;
-		padding-left: 4%;
+		padding-left: 8%;
 	}
-		.aCacher ul
+		.aCacher ul .sujet
 		{
 			line-height:3em;
-			padding-left: 8%;
+			padding-left: 4%;
 		}
+
 
 .sujet
 {
