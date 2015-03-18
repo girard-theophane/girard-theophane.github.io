@@ -82,7 +82,8 @@ body
 
 .lieu
 {
-	text-align:center;
+  font-size: 12px;
+  font-style: italic;
 }
 
 #contact
