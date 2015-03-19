@@ -81,7 +81,7 @@ body
 }
 	.aCacher ul
 	{
-		line-height:3em;
+		//line-height:3em;
 		padding-left: 4%;
 	}
 		.aCacher .lieu
@@ -92,8 +92,10 @@ body
 			{
 				padding-left: 2%;
 			}
-
-
+				.aCacher li
+				{
+					padding-bottom:10px;
+				}
 .sujet
 {
 	font-weight: bold;
