@@ -97,10 +97,11 @@ body
 				{
 					padding-bottom:15px;
 				}
-.sujet
-{
-	font-weight: bold;
-}
+					.aCacher.sujet
+					{
+						font-weight: bold;
+						maring-bottom: 10px;
+					}
 
 .lieu
 {
