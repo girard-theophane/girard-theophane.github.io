@@ -97,11 +97,12 @@ body
 				{
 					padding-bottom:15px;
 				}
-					.sujet
-					{
-						font-weight: bold;
-						maring-bottom: 10px;
-					}
+					
+.sujet
+{
+	font-weight: bold;
+	maring-bottom: 10px;
+}
 
 .lieu
 {
