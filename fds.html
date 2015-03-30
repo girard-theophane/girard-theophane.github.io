@@ -10,6 +10,13 @@
 		<script type="text/javascript" src="script/script.js"></script>
     </head>
 
+	
+	<?php
+	// Sous WAMP (Windows)
+	$bdd = new PDO('mysql:host=localhost;dbname=formulaire;charset=utf8', 'root', '');
+	$reponse = $bdd->query('SELECT * FROM FORMULAIRE');
+	$donnees = $reponse->fetch();	
+	?>
     <body>
 	<div class="container">
 		<div class="row">
@@ -44,6 +51,10 @@
 				<h3>Théophane GIRARD</h3>
 				
 				<p>
+				
+				<?php
+				echo $donnees['NOM'];
+				?>
 				Actuellement en cours d'études d'Informatique à l'IUT de Blagnac j'apprécie énormément le Développement Web et le Web Design. Mes études et mes formations m'ont permis de développer ma capacité à travailler en équipe, à
 				travailler de façon rigoureuse et à utiliser ma créativité à bon escient. 
 				</p>	
