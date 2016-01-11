@@ -6,45 +6,56 @@
 		<script type="text/javascript" src="script/jquery-latest.js"></script>
 		<link rel="stylesheet" href="bootstrap.css" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="img/icon.ico" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <link rel="stylesheet" href="responsive.css" />
 
-		<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
     </head>
 
     <body>
 	<div class="container">
+
 		<div class="row">
-			<div class="col-lg-4 col-xs-12 col-sm-12">
-			
+			<div class="col-lg-4 col-xs-4 col-sm-4 fixe">
+
 				<div class="menu">
-					<header>
-						
+
 						<img src="photoProfil.jpg" alt="photo de Théophane GIRARD" class="photoProfil"/>
-						
-					</header>
-					
-					<p> 
+					<p>
 						 <br>
 						<h3>Catégories</h3>
 						<ul>
-							<li><a href="#formation">Ma Formation</a></li>
-							<li><a href="#expPro">Mes Experiences Professionnelles</a></li>
-							<li><a href="#skill">Mes Compétences</a></li>
-							<li><a href="#centreInteret">Mes Centres d'Interets</a></li>
-							<li><a href="#contact">Me Contacter</a></li>
-						</ul>	
+             				<li><a class="scrollTo" href="#expPro">Mon Experience Professionnelle</a></li>
+							<li><a class="scrollTo" href="#formation">Ma Formation</a></li>
+							<li><a class="scrollTo" href="#skill">Mes Compétences</a></li>
+              				<li><a class="scrollTo" href="#langue">Mes Langues</a></li>
+							<li><a class="scrollTo" href="#centreInteret">Mes Activités transversales</a></li>
+              				<li><a class="scrollTo"  href="#contact">Me Contacter</a></li>
+						</ul>
 
-		
+
 					</p>
 				</div>
 			</div>
 
-			<section class="col-lg-8 col-xs-12 col-sm-12">
-			<div class="categories">
+			<section class="col-lg-8 col-xs-8 col-sm-8 content">
+					<header>
+						<div class="bandeau">
+							<h1 style="text-align:center"> Théophane Girard</h1>
+    							<div class="dispositionIcone">
+    								<a href="mailto:girard.theophane@gmail.com"><img src="img/gmail.png"  class="iconeBandeau img-zoom"></a>
+    							</div>
+    							<div class="dispositionIcone">
+    								<a href="https://www.facebook.com/theophane.girard?fref=ts"><img src="img/fb.png" class="iconeBandeau img-zoom"></a>
+    							</div>
+    							<div class="dispositionIcone">
+    								<a href="https://twitter.com/girardtheophane?lang=fr"><img src="img/twitter.png" class="iconeBandeau img-zoom"></a>
+    							</div>
+						</div>
+					</header>
 				<article>
-				<h3>Théophane GIRARD</h3>
-				
-				<p>
-				
+
 				<p>
 				Titulaire d'un DUT en Informatique, j'apprécie énormément le Développement Web et Développement Orienté Objet.<br> Mon experience professionnelle m'a appris à devenir améliorer mon autonomie puisque au cours de celle-ci, j'ai dû travailler seul sur le projet qui m'a été confié. <br>Mes études et mes formations m'ont permis de développer ma capacité à travailler en équipe, à
 				travailler de façon rigoureuse et à utiliser ma créativité à bon escient.
@@ -52,44 +63,29 @@
 				<p>
 					J'adore les nouvelles technologies, le cinéma et la musique.
 				</p>
-				
+
 				</article>
-				
+
+      <div class="categories">
+
 				<br>
-				
-				<article class ="aCacher"  id="formation">
-				
-						<h3>Formation</h3>
-					
-			<ul>
-					<li>
-					<div class="sujet">2013-2015 IUT Informatique</div> <div class="ville">Blagnac </div> <div class="lieu">Université Jean Jaurès (anciennement Mirail)</div>
-					</li>
-					<li>
-					<div class="sujet">2012-2013 Année préparatoire</div> <div class="ville">EISTI - École Internationale des Sciences et du
-				Traitement de l’Information</div>  <div class="lieu">Académie de Bordeaux</div>
-					</li>
-					<li>
-					<div class="sujet">2012 BAC S </div><div class="lieu">Lycée Clémence-Royer de Fonsorbes</div>
 
-					</li>
+        <article class ="aCacher active haut"  id="expPro">
 
 
-
-
-
-				</ul>
-				</article>										
-				<article class ="aCacher"  id="expPro">	
-			
-
-				<h3>Experience Professionnelles</h3>	
-							
+              <h3>Experience Professionnelle</h3>
 
         <ul>
-        	<li>
-                <div class="sujet">Actuellement</div> <div class="lieu">Rectorat de l'académie de Toulouse </div>  <div class="ville">Mission: Refonte entière d'une application Web sous le framework Symfony. </div>
-              
+          <li>
+                <div class="sujet">Actuellement</div> <div class="lieu">Rectorat de l'académie de Toulouse</div>  <div class="ville">Développeur Web - Maintenance d'application Web</div>
+                <ul id="description">
+                    <li>
+                            Framework: Symfony 2
+                    </li>
+                    <li>
+                            Base de données: MySQl
+                    </li>
+                </ul>
           </li>
           <li>
                 <div class="sujet">2015 Stage (2 mois)</div> <div class="lieu">Martell (groupe Pernod-Ricard) - Cognac</div>  <div class="ville">Mission: Refonte entière d'une application SilverLight de l'entreprise. </div>
@@ -107,12 +103,35 @@
           </li>
         </ul>
 
-				</article>												
+        </article>
+				<article class ="aCacher active"  id="formation">
+
+						<h3>Formation</h3>
+
+				<ul>
+					<li>
+					<div class="sujet">2013-2015 IUT Informatique</div> <div class="ville">Blagnac </div> <div class="lieu">Université Jean Jaurès (anciennement Mirail)</div>
+					</li>
+					<li>
+					<div class="sujet">2012-2013 Année préparatoire</div> <div class="ville">EISTI - École Internationale des Sciences et du
+				Traitement de l’Information</div>  <div class="lieu">Académie de Bordeaux</div>
+					</li>
+					<li>
+					<div class="sujet">2012 BAC S </div><div class="lieu">Lycée Clémence-Royer de Fonsorbes</div>
+
+					</li>
+
+
+
+
+
+				</ul>
+				</article>
 				<article class ="aCacher active"  id="skill">
 
-							<h3>Compétences</h3>					
-															
-							<ul>
+							<h3>Compétences</h3>
+
+				<ul>
 					<li>
 					       <div class="sujet">Langages</div> <div class="ville">  Java, C#, MySQL, HTML 5, PHP, JQuery, C, Python, Cobol</div>
 					</li>
@@ -129,40 +148,50 @@
 
 				</ul>
 
-				</article>						
-				<article class ="aCacher"  id="centreInteret">
-
-							<h3>Centres d'Interets</h3>
-										
-											
-				<ul>
-					<li>
-					<div class="sujet">	Sport</div> 
-						<ul>
-							<li>badminton (4 ans)</li>
-							<li>tir a l'arc (3 ans)</li>
-							<li>judo (5 ans)</li>
-						</ul>	
-					</li>
-					<li>
-					<div class="sujet">Artistique</div> <div class="ville">montage vidéo, dessin</div>
-					</li>
-					<li>
-					<div class="sujet">Voyages</div><div class="ville"> Angleterre, Irlande, Espagne, Hollande, Belgique</div>
-
 				</article>
-				
-				<article class ="aCacher"  id="contact">
 
-							<h3>Contact</h3>	
+        <article class ="aCacher active"  id="langue">
+
+                <h3>Langues</h3>
+
+          <ul>
+            <li>
+                   <div class="sujet">Anglais  </div><div class="ville">niveau intermédiaire (B2-C1) </div><div class="lieu">Voyages languistiques Angleterre, Irlande</div>
+            </li>
+            <li>
+                   <div class="sujet">Espagnol </div><div class="ville">niveau B1</div>
+            </li>
+
+          </ul>
+
+          </article>
+          <article class ="aCacher active"  id="centreInteret">
+							<h3>Mes Activités transversales</h3>
+
+				<ul>
+          <li>
+                <div class="sujet">2014-2015 (en cours)</div> <div class="ville"> animateur Chef Scout </div> <div class="lieu">Scout et Guide de France</div>
+          </li>
+					<li>
+					       <div class="sujet">Sport</div> <div class="ville">badminton (4 ans)</div>
+					</li>
+					<li>
+					       <div class="sujet">Artistique</div> <div class="ville">montage vidéo, dessin</div>
+					</li>
+        </ul>
+				</article>
+
+				<article class ="aCacher active"  id="contact">
+
+							<h3>Contact</h3>
 							<div class="iconeContact">
-							<a href=""><img src="img/gmail.png"></a>
+							<a href="mailto:girard.theophane@gmail.com"><img src="img/gmail.png" class="img-zoom"></a>
 							</div>
 							<div class="iconeContact">
-							<a href="http://www.facebook.com"><img src="img/fb.png"></a>
+							<a href="https://www.facebook.com/theophane.girard?fref=ts"><img src="img/fb.png" class="img-zoom"></a>
 							</div>
 							<div class="iconeContact">
-							<a href="#skill"><img src="img/twitter.png"></a>
+							<a href="#skill"><img src="img/twitter.png" class="img-zoom"></a>
 							</div>
 				</article>
 			</section>
@@ -170,8 +199,8 @@
 		</div>
     </div>
 	<nav>
-	
-	
+
+
 	</nav>
     </body>
 </html>
