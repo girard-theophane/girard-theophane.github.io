@@ -1,39 +1,17 @@
-/*
- *	TP 5 : Animations
- *	
-*/
+$(function(){
 
-// Au chargement de la page :
-$(function(){		
-		var $categories = $('article.aCacher');
-		$categories.hide();
-		$(".active").show();
-				
-		$('a').click(function()
-		{		
-			var $idClique = $(this).attr("href");
-			
-			//fait disparaitre la categorie actuellement affichée
-			$(".active").slideToggle();
-			$(".active").removeClass("active");
-			$(".cliqué").removeClass("cliqué");
+		$('.scrollTo').click( function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
 
-			//fait apparaitre la categorie souhaitée
-			$($idClique).delay(750).slideToggle();
-			
-			if($idClique == "#contact")
-			{
-				$('#contact a').hide();
-				$('#contact a').eq(0).delay(1600).fadeIn();
-				$('#contact a').eq(1).delay(2100).fadeIn();
-				$('#contact a').eq(2).delay(2600).fadeIn();
-			}
-			$($idClique).addClass('active');
-			$(this).addClass("cliqué");
-		});	
-/*	$('#contact a').first().delay(1300).show('slow', function showNextOne() {
-				$(this).next('#contact a').show('slow', showNextOne);
-				});*/
-}); // Fin des instructions envoyées au chargement de la page
-	
+		$('.img-zoom').hover(function() {
+	          $(this).addClass('transition');
 
+	      }, function() {
+	          $(this).removeClass('transition');
+	      });
+
+});
