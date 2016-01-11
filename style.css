@@ -5,8 +5,27 @@ body
 	background-color: #465781;
 }
 
+a
+{
+	color: #005094;
+}
+
+p
+{
+	text-align: justify;
+}
+
+
+.fixe
+{
+	position: fixed;
+	left:0%;
+}
+
 .menu
 {
+	margin: auto;
+	width: 80%;
 	border: 3px solid black;
 	border-radius: 2px;
 	background-color: #E6F0F2;
@@ -77,6 +96,11 @@ body
 	margin-right: auto;
 }
 
+.aCacher
+{
+	margin-bottom: 20px;
+}
+
 .aCacher h3
 {
 	margin-left: 3%;
@@ -85,7 +109,6 @@ body
 
 .aCacher ul
 {
-	//line-height:3em;
 	padding-left: 4%;
 }
 
@@ -116,16 +139,29 @@ body
 	font-style: italic;
 }
 
-#contact
-{
-	padding-bottom: 10%;
-	height: 300px;
+textarea{
+	resize:none;
 }
 
-#contact h3
+#contact
 {
-	padding-bottom: 5%;
+	height:300px;
 }
+
+form
+{
+	padding-top: 10px;
+}
+	form .champ
+	{
+		display: block;
+		width:25%;
+	}
+		form .zoneSaisie
+		{
+			width:40%;
+		}
+
 
 .row
 {
@@ -143,4 +179,72 @@ article
 h3
 {
 	font-family: cursive;
+}
+
+#description
+{
+	margin-left: 20px;
+}
+
+.presentation
+{
+	position: fixed;
+	width: 68.3%;
+}
+
+.content
+{
+	margin-left: 2%;
+	position: relative;
+	left: 30%;
+}
+/*
+.categories
+{
+		padding-top: 30%;
+}
+*/
+.container
+{
+		width:100%;
+}
+
+header
+{
+	height:150px;
+	text-align:right;
+}
+
+.bandeau
+{
+	border: 3px solid black;
+	border-radius: 2px;
+	background-color: #E6F0F2;
+	width:100%;
+    padding: 10px;
+}
+
+.iconeBandeau
+{
+	max-width:3%;
+}
+
+.dispositionIcone
+{
+	display:inline;
+}
+
+.img-zoom {
+    width: 310px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
 }
