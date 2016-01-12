@@ -33,7 +33,9 @@
 
 	.content
 	{
-	   margin-left: 0%;
+		margin-left: 0%;
+	   	position: relative;
+	   	left: 35%;
 	}
 }
 
