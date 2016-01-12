@@ -248,3 +248,8 @@ header
     -o-transform: scale(2);
     transform: scale(2);
 }
+
+#cachee
+{
+	display : none;
+}
