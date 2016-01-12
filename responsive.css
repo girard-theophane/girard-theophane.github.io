@@ -33,9 +33,9 @@
 
 	.content
 	{
-		margin-left: 0%;
-	   	position: relative;
-	   	left: 35%;
+	   margin-left: 0%;
+	   position: relative;
+	   left: 35%;
 	}
 }
 
@@ -69,5 +69,115 @@
 	   margin-left: 0%;
 	   left: 0%;
      	   width: 100%;
+	}
+
+	#cachee
+	{
+		width: 20%;
+		display: block;
+		position: relative;
+		float: left;
+	}
+
+	.visible
+	{
+		display: none;
+	}
+
+	.mobile
+	{
+		display: inline;
+	}
+
+	.bandeau
+	{
+		overflow: hidden;
+	}
+
+	.intro
+	{
+		margin-top: 12%;
+	}
+
+	.iconeBandeau
+	{
+		max-width: 7%;
+		margin-bottom: -60px;
+	}
+
+	header h1
+	{
+		font-size: 55px;
+	}
+}
+
+/* P E T I T   M O B I LE */
+@media screen and (max-width: 590px)
+{
+	.fixe
+	{
+		position: relative;
+		width: 100%;
+	}
+	.menu
+	{
+		position: relative;
+		width: 100%;
+	}
+
+	.photoProfil
+	{
+		max-width: 33%;
+	}
+
+	.presentation
+	{
+		position: relative;
+	}
+
+	.content
+	{
+	   margin-left: 0%;
+	   left: 0%;
+     	   width: 100%;
+	}
+
+	#cachee
+	{
+		width: 20%;
+		display: block;
+		position: relative;
+		float: left;
+	}
+
+	.visible
+	{
+		display: none;
+	}
+
+	.mobile
+	{
+		display: inline;
+	}
+
+	.bandeau
+	{
+		overflow: hidden;
+	}
+
+	.intro
+	{
+		margin-top: 12%;
+	}
+
+	.iconeBandeau
+	{
+		max-width: 7%;
+		margin-bottom: -20px;
+	}
+
+	header h1
+	{
+		font-size: 30px;
 	}
 }
