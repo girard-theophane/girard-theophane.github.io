@@ -265,3 +265,8 @@ header
 {
 	padding-left: 5%;
 }
+
+.ui-loader
+{
+	display: none;
+}
