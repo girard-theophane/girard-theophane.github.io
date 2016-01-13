@@ -49,4 +49,6 @@ $(function(){
 				}
         	}
 	});
+	
+	$('.container').swipe({allowPageScroll:"vertical"});
 });
