@@ -17,7 +17,6 @@ $(function(){
 	      });
 
 		var menuEstVisible=false;
-		$("#menuMobile").css("height",$( window ).height());
 		
 		$( document ).on( "swiperight", ".container", function( e ) {
 			 if(!menuEstVisible)
