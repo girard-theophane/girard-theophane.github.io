@@ -27,6 +27,7 @@ $(function(){
 					menuEstVisible =false;
 					$(".container").fadeTo( "slow", 1 );
 					$("html").css("overflow","unset");
+					$('.container').swipe({allowPageScroll:"vertical"});
 				}
 	        },
 	        swipe: function(event, direction, distance, duration, fingerCount)
@@ -44,7 +45,8 @@ $(function(){
 					menuEstVisible =false;
 					$(".container").fadeTo( "slow", 1 );
 					$("html").css("overflow","unset");
+					$('.container').swipe({allowPageScroll:"vertical"});
 				}
-            }
-		});
+        	}
+	});
 });
