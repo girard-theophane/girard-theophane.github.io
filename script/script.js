@@ -17,26 +17,5 @@ $(function(){
 	      });
 
 		var menuEstVisible=false;
-		
-		$( document ).on( "swiperight", ".container", function( e ) {
-			 if(!menuEstVisible)
-			 {
-				 $("#menuMobile").animate({left: '0px'});
-				 menuEstVisible =true;
-				 $(".container").fadeTo( "slow", 0.33 );
-				 $("html").css("overflow","hidden");
-			 }
-		});
-
-		$( document ).on( "swipeleft", ".container", function( e ) {
-			if(menuEstVisible)
-			{
-				$("#menuMobile").animate({left: '-215px'});
-				menuEstVisible =false;
-				$(".container").fadeTo( "slow", 1 );
-				$("html").css("overflow","unset");
-			}
-	     });
-
 
 });
