@@ -17,8 +17,9 @@ $(function(){
 	      });
 
 		var menuEstVisible=false;
-
-		 $( document ).on( "swiperight", ".container", function( e ) {
+		$("#menuMobile").css("height",$( window ).height());
+		
+		$( document ).on( "swiperight", ".container", function( e ) {
 			 if(!menuEstVisible)
 			 {
 				 $("#menuMobile").animate({left: '0px'});
