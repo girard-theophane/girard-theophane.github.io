@@ -18,4 +18,33 @@ $(function(){
 
 		var menuEstVisible=false;
 
+		$('.container').swipe({
+			tap: function()
+	        {
+				if(menuEstVisible)
+				{
+					$("#menuMobile").animate({left: '-215px'});
+					menuEstVisible =false;
+					$(".container").fadeTo( "slow", 1 );
+					$("html").css("overflow","unset");
+				}
+	        },
+	        swipe: function(event, direction, distance, duration, fingerCount)
+	        {
+				if((!menuEstVisible)&&(direction=="right"))
+				{
+					$("#menuMobile").animate({left: '0px'});
+					menuEstVisible =true;
+					$(".container").fadeTo( "slow", 0.33 );
+					$("html").css("overflow","hidden");
+				}
+				if((menuEstVisible)&&(direction=="left"))
+				{
+					$("#menuMobile").animate({left: '-215px'});
+					menuEstVisible =false;
+					$(".container").fadeTo( "slow", 1 );
+					$("html").css("overflow","unset");
+				}
+            }
+		});
 });
