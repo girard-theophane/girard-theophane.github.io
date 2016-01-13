@@ -109,6 +109,11 @@
 	{
 		font-size: 55px;
 	}
+	
+	#menuMobile
+	{
+		display:block;
+	}
 }
 
 /* P E T I T   M O B I LE */

@@ -1,5 +1,7 @@
 $(function(){
 
+	
+
 		$('.scrollTo').click( function() { // Au clic sur un élément
 			var page = $(this).attr('href'); // Page cible
 			var speed = 750; // Durée de l'animation (en ms)
@@ -13,5 +15,26 @@ $(function(){
 	      }, function() {
 	          $(this).removeClass('transition');
 	      });
+
+		var menuEstVisible=false;
+
+		 $( document ).on( "swiperight", ".container", function( e ) {
+			 if(!menuEstVisible)
+			 {
+				 $("#menuMobile").animate({left: '0px'});
+				 menuEstVisible =true;
+				 $(".container").fadeTo( "slow", 0.33 );
+			 }
+		});
+
+		$( document ).on( "swipeleft", ".container", function( e ) {
+			if(menuEstVisible)
+			{
+				$("#menuMobile").animate({left: '-215px'});
+				menuEstVisible =false;
+				$(".container").fadeTo( "slow", 1 );
+			}
+	     });
+
 
 });
