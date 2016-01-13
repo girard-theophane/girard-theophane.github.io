@@ -1,6 +1,6 @@
 $(function(){
 
-	
+
 
 		$('.scrollTo').click( function() { // Au clic sur un élément
 			var page = $(this).attr('href'); // Page cible
@@ -24,6 +24,7 @@ $(function(){
 				 $("#menuMobile").animate({left: '0px'});
 				 menuEstVisible =true;
 				 $(".container").fadeTo( "slow", 0.33 );
+				 $("html").css("overflow","hidden");
 			 }
 		});
 
@@ -33,6 +34,7 @@ $(function(){
 				$("#menuMobile").animate({left: '-215px'});
 				menuEstVisible =false;
 				$(".container").fadeTo( "slow", 1 );
+				$("html").css("overflow","unset");
 			}
 	     });
 
