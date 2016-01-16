@@ -1,0 +1,102 @@
+@media screen and (max-width: 499px)
+{
+      em, span
+      {
+            font-size: 100%;
+      }
+}
+
+@media screen and (max-width: 768px)
+{
+      #menuPC
+      {
+            display: none;
+      }
+
+      #menuMobile
+      {
+            display: block;
+      }
+}
+
+@media screen and (max-width: 458px)
+{
+      em, span, p
+      {
+            font-size: 96%;
+      }
+}
+
+@media screen and (max-width: 400px)
+{
+      em, span
+      {
+            font-size: 80%;
+      }
+}
+
+@media screen and (max-width: 767px)
+{
+      #photoProfil
+      {
+            max-height: 67%;
+      }
+
+      #espaceImage
+      {
+            height: 25%;
+      }
+
+      #menuMobile hr
+      {
+           margin-top: 3%;
+           margin-bottom: 3%;
+      }
+
+}
+
+@media screen and (max-width: 1382px)
+{
+      .largeurInfo
+      {
+            width: 100%;
+      }
+}
+
+@media screen and (max-width: 1111px)
+{
+      .longMot
+      {
+            font-size: 87%;
+      }
+}
+
+@media screen and (max-height: 658px)
+{
+      #container
+      {
+            height: 120%;
+      }
+}
+
+
+@media screen and (max-height: 700px)
+{
+      #conteneurEspaceLien
+      {
+            height: 80%;
+      }
+
+      #container
+      {
+            min-height: 850px;
+      }
+}
+
+@media screen and (max-height: 600px)
+{
+      #conteneurEspaceLien
+      {
+            height: 70%;
+      }
+}
