@@ -38,22 +38,25 @@ $(function(){
 	            },
 	            swipe: function(event, direction, distance, duration, fingerCount)
 	            {
-									if((!menuEstVisible)&&(direction=="right"))
-						     			 {
-						     				 $("#menuMobile").animate({left: '0%'});
-						     				 menuEstVisible =true;
-						     				 $("#container").fadeTo( "slow", 0.33 );
-						     				 $("html").css("overflow","hidden");
-						     			 }
+				if($("#menuPC").css("display") === "none")
+				{
+					if((!menuEstVisible)&&(direction=="right"))
+					 {
+						 $("#menuMobile").animate({left: '0%'});
+						 menuEstVisible =true;
+						 $("#container").fadeTo( "slow", 0.33 );
+						 $("html").css("overflow","hidden");
+					 }
 
-									 if((menuEstVisible)&&(direction=="left"))
-						 			{
-						 				$("#menuMobile").animate({left: '-50%'});
-						 				menuEstVisible =false;
-						 				$("#container").fadeTo( "slow", 1 );
-						 				$("html").css("overflow","unset");
-										$('#container').swipe({allowPageScroll:"vertical"});
-						 			}
+					 if((menuEstVisible)&&(direction=="left"))
+					{
+						$("#menuMobile").animate({left: '-50%'});
+						menuEstVisible =false;
+						$("#container").fadeTo( "slow", 1 );
+						$("html").css("overflow","unset");
+						$('#container').swipe({allowPageScroll:"vertical"});
+					}
+				}									
 	            }
 	      });
 });
