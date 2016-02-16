@@ -172,11 +172,14 @@ span
 .categories .lieu
 {
       padding-left: 2%;
+      font-style: italic;
+      color: #7A7777;
 }
 
 .categories .ville
 {
       padding-left: 2%;
+      font-size: 95%;
 }
 
 .categories li
