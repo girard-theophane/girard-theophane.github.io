@@ -186,3 +186,8 @@ span
 {
       padding-bottom: 15px;
 }
+
+#showMenuLien
+{
+      display: none;
+}

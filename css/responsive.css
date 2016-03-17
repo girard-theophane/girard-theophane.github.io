@@ -24,9 +24,20 @@
             display: none;
       }
 
-      #menuMobile
+      #menuMobile, #showMenuLien
       {
             display: block;
+      }
+
+      #showMenuLien
+      {
+            float: left;
+            width: 10%;
+      }
+
+      #showMenuImage
+      {
+            width :100%;
       }
 }
 

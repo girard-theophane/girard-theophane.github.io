@@ -26,18 +26,18 @@ $(function(){
 
 		$('#container').swipe({
 			tap: function()
-	            {
+	    {
 				if(menuEstVisible)
-      			{
+      	{
       				$("#menuMobile").animate({left: '-50%'});
       				menuEstVisible =false;
       				$("#container").fadeTo( "slow", 1 );
       				$("html").css("overflow","unset");
-					$('#container').swipe({allowPageScroll:"vertical"});
-      			}
-	            },
-	            swipe: function(event, direction, distance, duration, fingerCount)
-	            {
+							$('#container').swipe({allowPageScroll:"vertical"});
+      	}
+	    },
+	    swipe: function(event, direction, distance, duration, fingerCount)
+	    {
 				if($("#menuPC").css("display") === "none")
 				{
 					if((!menuEstVisible)&&(direction=="right"))
@@ -49,14 +49,21 @@ $(function(){
 					 }
 
 					 if((menuEstVisible)&&(direction=="left"))
-					{
-						$("#menuMobile").animate({left: '-50%'});
-						menuEstVisible =false;
-						$("#container").fadeTo( "slow", 1 );
-						$("html").css("overflow","unset");
-						$('#container').swipe({allowPageScroll:"vertical"});
-					}
-				}									
-	            }
-	      });
+					 {
+							$("#menuMobile").animate({left: '-50%'});
+							menuEstVisible =false;
+							$("#container").fadeTo( "slow", 1 );
+							$("html").css("overflow","unset");
+							$('#container').swipe({allowPageScroll:"vertical"});
+					 }
+				}
+	    }
+	  });
+
+		$('#showMenuLien').click(function() {					
+					$("#menuMobile").animate({left: '0%'});
+					menuEstVisible =true;
+					$("#container").fadeTo( "slow", 0.33 );
+		});
+
 });
