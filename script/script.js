@@ -51,14 +51,16 @@ $(function(){
 			{
 				if((!menuEstVisible)&&(direction=="right"))
 				{
+					//region Affichage menu et desactivation du scroll
 					showMenu();
-					$("html").css("overflow","hidden");
+					//$("html").css("overflow","hidden");
+					//endregion
 				}
 
 				if((menuEstVisible)&&(direction=="left"))
 				{
 					hideMenu();
-					$("html").css("overflow","unset");
+					//$("html").css("overflow","unset");
 					$('#container').swipe({allowPageScroll:"vertical"});
 				}
 			}
