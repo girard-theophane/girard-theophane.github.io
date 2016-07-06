@@ -47,9 +47,8 @@ $(function(){
 			if(menuEstVisible)
 			{
 				hideMenu();
-				//$('#container').swipe({allowPageScroll:"vertical"});
 			}
-		}/*,
+		},
 		swipe: function(event, direction, distance, duration, fingerCount)
 		{
 			if($("#menuPC").css("display") === "none")
@@ -58,18 +57,15 @@ $(function(){
 				{
 					//region Affichage menu et desactivation du scroll
 					showMenu();
-					$("html").css("overflow","hidden");
 					//endregion
 				}
 
 				if((menuEstVisible)&&(direction=="left"))
 				{
 					hideMenu();
-					$("html").css("overflow","unset");
-					//$('#container').swipe({allowPageScroll:"vertical"});
 				}
 			}
-		}*/
+		}
 	});
 
 	$('#showMenuLien').click(showMenu);
