@@ -52,6 +52,11 @@
       {
             padding-left: 0%;
       }
+      
+      .logo
+      {
+            display: none;
+      }
 }
 
 @media screen and (max-height: 600px)
