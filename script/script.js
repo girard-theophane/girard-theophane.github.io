@@ -56,9 +56,7 @@ $(function(){
 			{
 				if((!menuEstVisible)&&(direction=="right"))
 				{
-					//region Affichage menu et desactivation du scroll
 					showMenu();
-					//endregion
 				}
 
 				if((menuEstVisible)&&(direction=="left"))
