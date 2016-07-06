@@ -15,12 +15,15 @@ $(function(){
 
 		hideMenu();
 	});
+
+	//region Zoom des icones de cotnact au survol
 	$('.img-zoom').hover(function() {
 		$(this).addClass('transition');
 
 	}, function() {
 		$(this).removeClass('transition');
 	});
+	//endregion
 
 	var menuEstVisible=false;
 
@@ -42,7 +45,7 @@ $(function(){
 			if(menuEstVisible)
 			{
 				hideMenu();
-				$('#container').swipe({allowPageScroll:"vertical"});
+				//$('#container').swipe({allowPageScroll:"vertical"});
 			}
 		},
 		swipe: function(event, direction, distance, duration, fingerCount)
@@ -61,7 +64,7 @@ $(function(){
 				{
 					hideMenu();
 					//$("html").css("overflow","unset");
-					$('#container').swipe({allowPageScroll:"vertical"});
+					//$('#container').swipe({allowPageScroll:"vertical"});
 				}
 			}
 		}
