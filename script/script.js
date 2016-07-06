@@ -31,12 +31,14 @@ $(function(){
 		$("#menuMobile").animate({left: '0%'});
 		menuEstVisible =true;
 		$("#container").fadeTo( "slow", 0.33 );
+		$("html").css("overflow","hidden");
 	}
 
 	function hideMenu() {
 		$("#menuMobile").animate({left: '-50%'});
 		menuEstVisible =false;
 		$("#container").fadeTo( "slow", 1 );
+		$("html").css("overflow","unset");
 	}
 
 	$('#container').swipe({
@@ -56,14 +58,14 @@ $(function(){
 				{
 					//region Affichage menu et desactivation du scroll
 					showMenu();
-					//$("html").css("overflow","hidden");
+					$("html").css("overflow","hidden");
 					//endregion
 				}
 
 				if((menuEstVisible)&&(direction=="left"))
 				{
 					hideMenu();
-					//$("html").css("overflow","unset");
+					$("html").css("overflow","unset");
 					//$('#container').swipe({allowPageScroll:"vertical"});
 				}
 			}
