@@ -49,19 +49,23 @@ $(function(){
 				hideMenu();
 			}
 		},
-		swipe: function(event, direction, distance, duration, fingerCount)
+		swipeLeft: function(event, direction, distance, duration, fingerCount)
 		{
-			$('#container').swipe({allowPageScroll:"vertical"});
-			if($("#menuPC").css("display") === "none")
+			if($("#menuPC").css("display") != "none")
 			{
-				if((!menuEstVisible)&&(direction=="right"))
-				{
-					showMenu();
-				}
-
-				if((menuEstVisible)&&(direction=="left"))
+				if((menuEstVisible))
 				{
 					hideMenu();
+				}
+			}
+		},
+		swipeRight: function ()
+		{
+			if($("#menuPC").css("display") === "none")
+			{
+				if ((!menuEstVisible))
+				{
+					showMenu();
 				}
 			}
 		}
