@@ -58,8 +58,8 @@
             overflow-y: scroll;
       }
 
-      .active
+      body
       {
-            font-size: 10px;
+            font-size: 60%;
       }
 }
