@@ -51,12 +51,14 @@ $(function(){
 		},
 		swipe: function(event, direction, distance, duration, fingerCount)
 		{
+			$('#container').swipe({allowPageScroll:"vertical"});
 			if($("#menuPC").css("display") === "none")
 			{
 				if((!menuEstVisible)&&(direction=="right"))
 				{
 					//region Affichage menu et desactivation du scroll
 					showMenu();
+					$("html").css("overflow","hidden");
 					//endregion
 				}
 
