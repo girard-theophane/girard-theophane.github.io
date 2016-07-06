@@ -58,7 +58,6 @@ $(function(){
 				{
 					//region Affichage menu et desactivation du scroll
 					showMenu();
-					$("html").css("overflow","hidden");
 					//endregion
 				}
 
