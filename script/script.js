@@ -51,12 +51,9 @@ $(function(){
 		},
 		swipeLeft: function(event, direction, distance, duration, fingerCount)
 		{
-			if($("#menuPC").css("display") != "none")
+			if((menuEstVisible))
 			{
-				if((menuEstVisible))
-				{
-					hideMenu();
-				}
+				hideMenu();
 			}
 		},
 		swipeRight: function ()
