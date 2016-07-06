@@ -57,4 +57,9 @@
             max-height: 200px;
             overflow-y: scroll;
       }
+
+      .active
+      {
+            font-size: 10px;
+      }
 }
