@@ -41,6 +41,14 @@
       }
 }
 
+@media screen and (max-width: 450px)
+{
+      .active
+      {
+            font-size: 60%;
+      }
+}
+
 @media screen and (max-height: 600px)
 {
       #espaceLienMobile
@@ -56,10 +64,5 @@
       {
             max-height: 200px;
             overflow-y: scroll;
-      }
-
-      body
-      {
-            font-size: 60%;
       }
 }
