@@ -164,16 +164,11 @@ span
       margin-bottom: 30px;
 }
 
-.categories ul
-{
-      padding-left: 4%;
-}
-
 .categories .lieu
 {
       padding-left: 2%;
       font-style: italic;
-      color: #7A7777;
+      color: #686262;
 }
 
 .categories .ville
@@ -190,4 +185,30 @@ span
 #showMenuLien
 {
       display: none;
+}
+
+.logo
+{
+    display: block;
+    margin: auto;
+}
+
+    #logoIUTBlagnac, #logoAcToulouse, #logoMartell
+    {
+        width: 50%;
+    }
+
+    #logoEISTI
+    {
+        width: 40%;
+    }
+
+.deuxiemeColonne
+{
+    width:30%;
+}
+
+.description
+{
+    padding-left: 9%;
 }
