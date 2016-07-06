@@ -47,7 +47,7 @@ $(function(){
 				hideMenu();
 				//$('#container').swipe({allowPageScroll:"vertical"});
 			}
-		},
+		}/*,
 		swipe: function(event, direction, distance, duration, fingerCount)
 		{
 			if($("#menuPC").css("display") === "none")
@@ -67,7 +67,7 @@ $(function(){
 					//$('#container').swipe({allowPageScroll:"vertical"});
 				}
 			}
-		}
+		}*/
 	});
 
 	$('#showMenuLien').click(showMenu);
