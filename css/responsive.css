@@ -50,6 +50,12 @@
       {
             padding-left: 0%;
       }
+
+      .titre
+      {
+            padding: 1%;
+            width: 65px;
+      }
 }
 
 @media screen and (max-height: 600px)
