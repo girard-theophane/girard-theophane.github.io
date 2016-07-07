@@ -9,13 +9,11 @@ body
 }
 #container
 {
-      background-color: white;
-      margin-top: 5%;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 5%;
-      min-width: 413px;
-      display: flex;
+    background-color: white;
+    min-width: 413px;
+    display: flex;
+    width: 66%;
+    margin: 5% 20% 20%;
 }
 
 .photoProfil
@@ -146,13 +144,14 @@ span
 
 .largeurInfo
 {
-      width: 49%;
-      display: inline-block;
+    display: inline-block;
+    margin-right: 6%;
+    margin-bottom: 2%;
 }
 
 .categories
 {
-      padding-left: 10%;
+      padding-left: 5%;
       margin-top: 5%;
       height: 66%;
 }
@@ -225,7 +224,7 @@ p
     border: 1px solid #9C9C9C;
     margin-right: 0px;
     margin-bottom: 20px;
-    width: 118px;
+    width: 107px;
 }
 
 .detailProfil
@@ -238,5 +237,5 @@ p
     margin-right: 20px;
     margin-bottom: 20px;
     background: rgb(213, 209, 209);
-    width: 221px;
+    width: 217px;
 }
