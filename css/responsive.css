@@ -53,10 +53,10 @@
             padding-left: 0%;
       }
       
-      .logo
+/*      .logo
       {
             display: none;
-      }
+      }*/
 }
 
 @media screen and (max-height: 600px)
