@@ -9,3 +9,9 @@ Pour toute proposition professionnelle, n'hésitez pas à me contacter : girard.
 A bientôt
 <br><br>
 Théophane GIRARD
+
+--
+
+## Crédits:
+
+Site développé avec ```HTML```, ```CSS```,```JQuery```,```Bootstrap```,[TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) ```(JQuery-plugin)```
