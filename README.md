@@ -12,6 +12,6 @@ Théophane GIRARD
 
 --
 
-## Crédits:
+##### Crédits:
 
 Site développé avec ```HTML```, ```CSS```,```JQuery```,```Bootstrap```,[TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) ```(JQuery-plugin)```
