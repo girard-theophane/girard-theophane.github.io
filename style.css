@@ -10,7 +10,7 @@ body
 #container
 {
     background-color: white;
-    min-width: 330px;
+    min-width: 150px;
     display: flex;
     width: 66%;
     margin: 5% 20% 20%;
