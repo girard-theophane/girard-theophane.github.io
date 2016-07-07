@@ -13,7 +13,10 @@ body
     min-width: 150px;
     display: flex;
     width: 66%;
-    margin: 5% 20% 20%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .photoProfil
@@ -179,9 +182,12 @@ span
       padding-bottom: 15px;
 }
 
-#showMenuLien
+#colonneIconeMenu
 {
-      display: none;
+    display: none;
+    width: 10%;
+    background-color: #EFEFEF;
+    min-width: 55px;
 }
 
 .logo
