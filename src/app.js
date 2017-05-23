@@ -15,7 +15,7 @@ app.config(function($mdThemingProvider) {
       'default': '900',
       'hue-1': '800',
       'hue-2': '300',
-      'hue-3': '300'
+      'hue-3': '50'
     });
 
 });

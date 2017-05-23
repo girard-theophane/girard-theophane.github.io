@@ -22,6 +22,7 @@
        <md-toolbar class="md-warn">
               <div class="md-toolbar-tools" layout-align="center center">
                             <h2 class="md-flex">Site en développement...</h2>
+                            &nbsp <md-progress-circular class="md-accent md-hue-3" md-diameter="20" md-mode="indeterminate"></md-progress-circular>
               </div>
        </md-toolbar>
       <!-- Begin Loader -->
@@ -37,7 +38,7 @@
                   <div hide show-gt-sm layout-padding>                            
                         <md-divider md-theme></md-divider>
                         <div ng-repeat="info in business_card">
-                              {{info.title}} : {{info.label}}
+                              <md-icon md-svg-src="assets/png/{{info.title}}.svg" aria-label=" "></md-icon> &nbsp {{info.label}}
                               <br><br>
                               <md-divider ></md-divider>
                         </div>
