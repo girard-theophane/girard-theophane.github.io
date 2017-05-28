@@ -1,7 +1,12 @@
 'use strict';
 
-var app = angular.module('CV', ['ngMaterial']);
-app.config(function($mdThemingProvider) {
+angular.module('CV', 
+[
+       'ngMaterial',
+       'angular-linq'
+])
+
+.config(function($mdThemingProvider) {
 
   $mdThemingProvider.theme('default')
     .primaryPalette('cyan', {
@@ -18,9 +23,20 @@ app.config(function($mdThemingProvider) {
       'hue-3': '50'
     });
 
-});
+})
 
-app.controller('CategoriesController', ['$scope','$http','$q', function ($scope, $http,$q) {
+.controller('CategoriesController', CategoriesController);
+
+// 2) Inject $linq to controller
+CategoriesController.$inject = [
+       '$scope',
+       '$http',
+       '$q',
+       '$linq'
+];
+
+function CategoriesController($scope, $http,$q,$linq) {
+
        $scope.isLoading= true; 
        $scope.api_categories = $http.get('http://girard-theophane.xyz/rest/testarray', {cache: false});       
        $scope.api_business_card = $http.get('http://girard-theophane.xyz/rest/business_card', {cache: false});
@@ -30,5 +46,22 @@ app.controller('CategoriesController', ['$scope','$http','$q', function ($scope,
          $scope.business_card = values[2].data;
          $scope.isLoading= false;
        });
-}]);
+
+       $scope.findSections =function (skill) {
+              console.log(skill);
+              var queryResult = $linq.Enumerable().From($scope.cards)
+                     .Where(function (x) {
+                            return x.category_label.data.acronym == 'CGI'
+                     })
+                     /*.OrderBy(function (x) {
+                            return x.user.screen_name
+                     })
+                     .Select(function (x) {
+                            return x.user.screen_name + ':' + x.text
+                     })*/
+                     .ToArray();
+		console.log("vm.queryResult : ", queryResult);
+
+       }
+};
 

@@ -67,7 +67,7 @@
                                           <md-content class="md-padding">
                                                 <h1 class="md-title">{{section.title}} {{section.time_spent}}</h1>
                                                 <p>{{section.place}}</p>
-                                                <md-button ng-repeat="skill in section.skills" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
+                                                <md-button ng-repeat="skill in section.skills" ng-click="findSections(skill.skill_label)" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
                                           </md-content> 
                                     </md-tab>    
                               </md-tabs>
@@ -75,7 +75,7 @@
                                     <md-content class="md-padding" ng-if="!section.date_experience">
                                           <h1 class="md-title">{{section.title}} {{section.time_spent}}</h1>
                                           <p>{{section.place}}</p>
-                                          <md-button ng-repeat="skill in section.skills" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
+                                          <md-button ng-repeat="skill in section.skills" ng-click="findSections(skill.skill_label)" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
                                     </md-content>
                               </div>
                         </md-card>
@@ -83,12 +83,13 @@
             </md-content>
             <!-- End Content -->
         </div>
-        <!-- Angular Material requires Angular.js Libraries -->
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-        <script src="src/app.js"></script>
+       <!-- Angular Material requires Angular.js Libraries -->
+       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+       <script src="//rawgit.com/Angular-Public/angular-linq/master/angular-linq.min.js"></script>		
+       <script src="src/app.js"></script>
 
         <!-- Angular Material Library -->
         <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
