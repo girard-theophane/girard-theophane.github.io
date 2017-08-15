@@ -46,7 +46,7 @@ function CategoriesController($scope, $http,$q,$linq) {
          $scope.business_card = values[2].data;
          $scope.isLoading= false;
        });
-
+	console.log($scope.cards);
        $scope.findSections =function (skill) {
               console.log(skill);
               var queryResult = $linq.Enumerable().From($scope.cards)
