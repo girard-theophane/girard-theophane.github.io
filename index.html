@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr" ng-app="CV">
-       <head>
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-			  <meta charset="UTF-8">
-              <!-- Angular Material style sheet -->
-              <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-       </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta charset="UTF-8">
+		<!-- Angular Material style sheet -->
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+	</head>
 
-       <body ng-controller="CategoriesController" ng-cloak>
+	<body ng-controller="CategoriesController" ng-cloak>
 
-       <md-toolbar layout="row" layout-padding>
-               <div flex="20" layout="row" layout-align="center center">
-                     image
-              </div>
-              <div flex="80" layout="row" layout-align="center center">
+		<md-toolbar layout="row" layout-padding>
+			<div flex="20" layout="row" layout-align="center center">
+				<img ng-src="{{imagePath}}" alt="photo de profil">
+			</div>
+			<div class="md-display-2" flex="80" layout="row" layout-align="center center">
+				Théophane Girard
+			</div>
 
-                            Théophane Girard
-              </div>
+			</md-toolbar>
+			<md-toolbar class="md-warn">
+			<div class="md-toolbar-tools" layout-align="center center">
+				<h2 class="md-flex">Site en développement...</h2>
+				&nbsp <md-progress-circular class="md-accent md-hue-3" md-diameter="20" md-mode="indeterminate"></md-progress-circular>
+			</div>
+		</md-toolbar>
 
-       </md-toolbar>
-       <md-toolbar class="md-warn">
-              <div class="md-toolbar-tools" layout-align="center center">
-                            <h2 class="md-flex">Site en développement...</h2>
-                            &nbsp <md-progress-circular class="md-accent md-hue-3" md-diameter="20" md-mode="indeterminate"></md-progress-circular>
-              </div>
-       </md-toolbar>
-      <!-- Begin Loader -->
-      <div layout="column", layout-align="center center" ng-show="isLoading" layout-fill>
-                  <md-progress-circular md-diameter="70" md-mode="indeterminate" layout-align="space-around"></md-progress-circular>
-      </div>
-      <!-- End Loader -->
+		<!-- Begin Loader -->
+		<div layout="column", layout-align="center center" ng-show="isLoading" layout-fill>
+				<md-progress-circular md-diameter="70" md-mode="indeterminate" layout-align="space-around"></md-progress-circular>
+		</div>
+		<!-- End Loader -->
 
-      <div layout="column" layout-gt-sm="row">
-            <!-- Begin General Information -->
-            <md-card ng-show="!isLoading" md-theme class="md-whiteframe-8dp" layout="column" flex-gt-sm="25" flex="100">
-                  <h1 class="md-headline" layout-padding>Informations générales</h1>
-                  <div hide show-gt-sm layout-padding>                            
-                        <md-divider md-theme></md-divider>
-                        <div ng-repeat="info in business_card">
-                              <md-icon md-svg-src="assets/png/{{info.title}}.svg" aria-label=" "></md-icon> &nbsp {{info.label}}
-                              <br><br>
-                              <md-divider ></md-divider>
-                        </div>
-                  </div>
-                  <md-tabs hide-gt-sm md-dynamic-height md-border-bottom>
-                        <md-tab ng-repeat="info in business_card" label="{{info.title}}">
-                              <md-content class="md-padding">                                                                                    
-                                    <p>{{info.label}}</p>                                          
-                              </md-content> 
-                        </md-tab>    
-                  </md-tabs>
-            </md-card>
-            <!-- Begin Loader -->
-            <!-- Begin Content -->
-            <md-content flex-gt-sm="75" flex="100" layout-padding>
-                  <div  flex="33" ng-show="!isLoading" ng-repeat="card in cards">
-                        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch class="md-whiteframe-8dp">
-                              <md-card-title>
-                                    <md-card-title-text>
-                                          <span class="md-headline">{{card.category_label}}</span>
-                                    </md-card-title-text>
-                              </md-card-title>
+		<div layout="column" layout-gt-sm="row">
+			<!-- Begin General Information -->
+			<md-card ng-show="!isLoading" md-theme class="md-whiteframe-8dp" layout="column" flex-gt-sm="25" flex="100">
+				<h1 class="md-headline" layout-padding>Informations générales</h1>
+				<div hide show-gt-sm layout-padding>                            
+					<md-divider md-theme></md-divider>
+					<div ng-repeat="info in business_card">
+						<md-icon md-svg-src="assets/png/{{info.title}}.svg" aria-label=" "></md-icon> &nbsp {{info.label}}
+						<br><br>
+						<md-divider ></md-divider>
+					</div>
+				</div>
+				<md-tabs hide-gt-sm md-dynamic-height md-border-bottom>
+					<md-tab ng-repeat="info in business_card" label="{{info.title}}">
+						<md-content class="md-padding">                                                                                    
+							<p>{{info.label}}</p>                                          
+						</md-content> 
+					</md-tab>    
+				</md-tabs>
+			</md-card>
+			<!-- Begin Loader -->
+			<!-- Begin Content -->
+			<md-content flex-gt-sm="75" flex="100" layout-padding>
+				<div  flex="33" ng-show="!isLoading" ng-repeat="card in cards">
+					<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch class="md-whiteframe-8dp">
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">{{card.category_label}}</span>
+							</md-card-title-text>
+						</md-card-title>
 
-                              <md-tabs md-dynamic-height md-border-bottom>
-                                    <md-tab ng-repeat="section in card.data" label="{{section.date_experience}}" ng-if="section.date_experience">
-                                          <md-content class="md-padding">
-                                                <h1 class="md-title">{{section.title}} {{section.time_spent}}</h1>
-                                                <p>{{section.place}}</p>
-                                                <md-button ng-repeat="skill in section.skills" ng-click="findSections(skill.skill_label)" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
-                                          </md-content> 
-                                    </md-tab>    
-                              </md-tabs>
-                              <div ng-repeat="section in card.data">
-                                    <md-content class="md-padding" ng-if="!section.date_experience">
-                                          <h1 class="md-title">{{section.title}} {{section.time_spent}}</h1>
-                                          <p>{{section.place}}</p>
-                                          <md-button ng-repeat="skill in section.skills" ng-click="findSections(skill.skill_label)" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
-                                    </md-content>
-                              </div>
-                        </md-card>
-                  </div>
-            </md-content>
-            <!-- End Content -->
-        </div>
-       <!-- Angular Material requires Angular.js Libraries -->
-       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-       <script src="//rawgit.com/Angular-Public/angular-linq/master/angular-linq.min.js"></script>		
-       <script src="src/app.js"></script>
+						<md-tabs md-dynamic-height md-border-bottom>
+							<md-tab ng-repeat="section in card.data" label="{{section.date_experience}}" ng-if="section.date_experience">
+								<md-content class="md-padding">
+									<h1 class="md-title">{{section.title}} {{section.time_spent}}</h1>
+									<p>{{section.place}}</p>
+									<md-button ng-repeat="skill in section.skills" ng-click="findSections(skill.skill_label)" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
+								</md-content> 
+							</md-tab>    
+						</md-tabs>
+						<div ng-repeat="section in card.data">
+							<md-content class="md-padding" ng-if="!section.date_experience">
+								<h1 class="md-title">{{section.title}} {{section.time_spent}}</h1>
+								<p>{{section.place}}</p>
+								<md-button ng-repeat="skill in section.skills" ng-click="findSections(skill.skill_label)" class="md-accent md-raised md-hue-1">{{skill.skill_label}}</md-button>                                                                                                                             
+							</md-content>
+						</div>
+					</md-card>
+				</div>
+			</md-content>
+		<!-- End Content -->
+		</div>
+		<!-- Angular Material requires Angular.js Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+		<script src="//rawgit.com/Angular-Public/angular-linq/master/angular-linq.min.js"></script>		
+		<script src="src/app.js"></script>
 
-        <!-- Angular Material Library -->
-        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-        </body>
+		<!-- Angular Material Library -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	</body>
 </html>
