@@ -26,7 +26,7 @@ ol
 li 
 {
 	position: relative;
-	top: 2.5em;
+	/* top: 2.5em; */
 
 	display: inline-block;
 	left: 1em;
@@ -105,3 +105,112 @@ aside::before
 	margin-top: -5px;
 	/* border-top: 0; */
 }  
+
+
+
+
+
+
+.formationSubway
+{
+	height: 413px;
+}
+
+
+/*************************/
+
+* 
+{
+	box-sizing: border-box;
+	/*   border: 1px solid black; */
+}
+    
+body 
+{
+	font-family: 'Lato';
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+}
+    
+ul 
+{
+	display: flex;
+	/* min-height: 100vh;
+	max-height: 100vh; */
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+}
+    
+li 
+{
+	flex: 1;
+	display: flex;
+	align-items: stretch;
+	/* padding: 20px; */
+	padding-left: 20px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+/* li:hover 
+{
+	background: #e53f2e;
+} */
+
+li.active 
+{
+	flex: 5;
+	background: #fff;
+	cursor: default;
+}
+
+/* li.active h2 
+{
+	color: #E74C3C;
+} */
+
+li.active .section-content 
+{
+	flex: 4;
+	opacity: 1;
+	transform: scaleX(1);
+	color: black;
+}
+
+li .section-title 
+{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+li .section-title h2 
+{
+	margin: 0;
+	white-space: nowrap;
+}
+
+li .section-content 
+{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	transition: all .25s .1s ease-out;
+}
+
+.accordion::before
+{
+	visibility: hidden;
+}

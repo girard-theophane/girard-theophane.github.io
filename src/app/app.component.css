@@ -1,10 +1,15 @@
 #container
 {
-	padding: 16px;
+	/* padding: 16px; */
 	margin-top: 150px;
 }
 
 .section
 {
 	margin: 10px;
+}
+
+.peer
+{
+	background-color: #f7f7f7;
 }

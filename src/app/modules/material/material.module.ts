@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule, MatCheckboxModule,MatCardModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule,MatCardModule,MatDividerModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {FlexLayoutModule} from "@angular/flex-layout";
 
@@ -10,14 +10,16 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 		MatButtonModule,
 		MatToolbarModule,
 		FlexLayoutModule,
-		MatCardModule
+		MatCardModule,
+		MatDividerModule
 	],
 	exports: 
 	[
 		MatButtonModule,
 		MatToolbarModule,
 		FlexLayoutModule,
-		MatCardModule
+		MatCardModule,
+		MatDividerModule
 	],
 	declarations: []
 })
