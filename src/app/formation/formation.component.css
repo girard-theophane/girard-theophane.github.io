@@ -1,0 +1,107 @@
+html, body 
+{
+	color: #681;
+	background: #def;
+	min-width: 700px;
+}
+
+/* ---- Timeline ---- */
+
+ol 
+{
+	position: relative;
+	display: block;
+	margin: 3%;
+	padding-left: 4px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width: 0px;
+	background: rgb(34, 100, 187);
+	border-radius: 148px;
+}
+
+
+/* ---- Timeline elements ---- */
+
+li 
+{
+	position: relative;
+	top: 2.5em;
+
+	display: inline-block;
+	left: 1em;
+	height: 5em;
+	width: 20em;
+
+	font: bold 14px arial;
+    
+  
+  /* ---- Details ---- */
+}
+
+li.saint-michel::before 
+{
+	background-color: #899de6;
+}
+
+li.opera::before 
+{
+	background-color: rgb(85, 105, 170);
+}
+li.cityhall::before 
+{
+	background-color: rgb(94, 66, 168);
+}
+li.catacombes::before 
+{
+	background-color: rgb(129, 13, 206);
+}
+li.grands-boulevards::before 
+{
+	background-color: #5d0abd;
+}
+
+li::before 
+{
+	content: "";
+	position: absolute;
+	top: -0.2em;
+	left: -1.87em;
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid black;
+	border-radius: 16px;
+	
+}
+
+aside {
+	display: none;
+	
+	position: absolute;
+	width: 10em;
+	left: -15em;
+	top: -0.8em;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,128,.1);
+	border-left: 2px solid rgba(0,0,128,.1);
+	border-bottom: 2px solid rgba(0,0,128,.1);
+	
+	font: 16px Georgia;
+	background: #eee;
+}
+aside::before 
+{
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 43%;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-left-color: rgba(0,0,0,.1);
+	margin-top: -5px;
+	/* border-top: 0; */
+}  
