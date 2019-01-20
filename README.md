@@ -1,8 +1,10 @@
 # Théophane Girard's CV Website
 
-Mon CV est accessible à cette adresse : [Théophane Girard's CV Website](https://girard-theophane.github.io/)
+Mon CV est accessible à cette adresse : [Théophane Girard's CV Website](https://theophane-girard.github.io/)
 <br><br>
-Souhaitant intégrer la formation ```Chef de projets Informatique en Ingénierie Logiciels``` de l'[IPI](http://www.ipi-ecoles.com/), en alternance à la rentrée 2016.
+Diplômé ```Chef de projets Informatique en Ingénierie Logiciels``` de l'[IPI](http://www.ipi-ecoles.com/), en 2018. 
+
+Jeune développeur Fullstack depuis OCtobre 2018 à [LR TECHNOLOGIES](https://lrtechnologies.fr/)
 <br><br>
 Pour toute proposition professionnelle, n'hésitez pas à me contacter : girard.theophane@gmail.com
 <br><br>
@@ -14,4 +16,4 @@ Théophane GIRARD
 
 ##### Crédits:
 
-Site développé avec ```HTML```, ```CSS```,```JQuery```,```Bootstrap```,[TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin) ```(JQuery-plugin)```
+Site développé avec ```Angular```, ```PrimeNG```,```ChartJS```
