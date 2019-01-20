@@ -346,7 +346,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-toolbar></app-toolbar>\r\n\r\n<app-contact></app-contact>\r\n<h1 class=\"app-title\">Compétences</h1>\r\n<app-skills></app-skills>\r\n<h1 class=\"app-title\">Formation et Experiences Professionnelles</h1>\r\n<app-timeline></app-timeline>\r\n<h1 class=\"app-title\">Activités transverses</h1>\r\n<app-other-activities></app-other-activities>\r\n<!-- <router-outlet></router-outlet> -->\r\n"
+module.exports = "<app-toolbar></app-toolbar>\r\n<app-contact></app-contact>\r\n\r\n<h1 class=\"app-title\">Compétences</h1>\r\n<app-skills></app-skills>\r\n\r\n<h1 class=\"app-title\">Formation et Experiences Professionnelles</h1>\r\n<app-timeline></app-timeline>\r\n\r\n<h1 class=\"app-title\">Activités transverses</h1>\r\n<app-other-activities></app-other-activities>\r\n"
 
 /***/ }),
 
@@ -583,7 +583,7 @@ var ContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"p-grid\">\r\n      <img class=\"p-col\" src=\"../../../assets/images/0.jpg\" alt=\"Théophane Girard\">\r\n      <!-- <div class=\"p-col\">                        \r\n            <img src=\"../../../assets/images/0.jpg\" alt=\"Théophane Girard\">\r\n      </div> -->\r\n      <div class=\"p-col-6\">\r\n            <a href=\"https://www.linkedin.com/in/girardtheophane/\" target=\"_blank\">\r\n                  <img class=\"socials-logo\" src=\"../../../assets/images/logos/in transp.png\" alt=\"Linkedin\">\r\n            </a>\r\n      </div>\r\n      <div class=\"p-col-6\">\r\n            <a href=\"https://github.com/girard-theophane\" target=\"_blank\">\r\n                  <img class=\"socials-logo\" src=\"../../../assets/images/logos/git.png\" alt=\"Linkedin\">\r\n            </a>\r\n      </div>                  \r\n</div>"
+module.exports = "<div class=\"p-grid\">\r\n      <img class=\"p-col\" src=\"../../../assets/images/0.jpg\" alt=\"Théophane Girard\">\r\n      <div class=\"p-col-6\">\r\n            <a href=\"https://www.linkedin.com/in/girardtheophane/\" target=\"_blank\">\r\n                  <img class=\"socials-logo\" src=\"../../../assets/images/logos/in transp.png\" alt=\"Linkedin\">\r\n            </a>\r\n      </div>\r\n      <div class=\"p-col-6\">\r\n            <a href=\"https://github.com/theophane-girard\" target=\"_blank\">\r\n                  <img class=\"socials-logo\" src=\"../../../assets/images/logos/git.png\" alt=\"Linkedin\">\r\n            </a>\r\n      </div>\r\n</div>"
 
 /***/ }),
 
@@ -745,6 +745,56 @@ var OtherActivitiesComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/primeng/primeng.module.ts":
+/*!*******************************************!*\
+  !*** ./src/app/primeng/primeng.module.ts ***!
+  \*******************************************/
+/*! exports provided: PrimengModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrimengModule", function() { return PrimengModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var primeng_progressbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/progressbar */ "./node_modules/primeng/progressbar.js");
+/* harmony import */ var primeng_progressbar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(primeng_progressbar__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var primeng_progressspinner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/progressspinner */ "./node_modules/primeng/progressspinner.js");
+/* harmony import */ var primeng_progressspinner__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(primeng_progressspinner__WEBPACK_IMPORTED_MODULE_3__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var PrimengModule = /** @class */ (function () {
+    function PrimengModule() {
+    }
+    PrimengModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                primeng_progressbar__WEBPACK_IMPORTED_MODULE_2__["ProgressBarModule"],
+                primeng_progressspinner__WEBPACK_IMPORTED_MODULE_3__["ProgressSpinnerModule"]
+            ],
+            exports: [
+                primeng_progressbar__WEBPACK_IMPORTED_MODULE_2__["ProgressBarModule"],
+                primeng_progressspinner__WEBPACK_IMPORTED_MODULE_3__["ProgressSpinnerModule"]
+            ],
+            declarations: []
+        })
+    ], PrimengModule);
+    return PrimengModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/skills/skills.mock.ts":
 /*!***************************************!*\
   !*** ./src/app/skills/skills.mock.ts ***!
@@ -864,6 +914,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./skills/skills.component */ "./src/app/skills/skills/skills.component.ts");
+/* harmony import */ var _primeng_primeng_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../primeng/primeng.module */ "./src/app/primeng/primeng.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -873,13 +924,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var SkillsModule = /** @class */ (function () {
     function SkillsModule() {
     }
     SkillsModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _primeng_primeng_module__WEBPACK_IMPORTED_MODULE_3__["PrimengModule"]
             ],
             declarations: [_skills_skills_component__WEBPACK_IMPORTED_MODULE_2__["SkillsComponent"]],
             exports: [
@@ -901,7 +954,7 @@ var SkillsModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"skills\" class=\"p-grid\">\r\n\t\t<canvas #skills></canvas>\t\t\r\n</div>"
+module.exports = "<div id=\"skills\" class=\"p-grid\">\r\n\t<div [hidden]=\"!loading\" id=\"skills-loader\">\r\n\t\t<p-progressSpinner></p-progressSpinner>\r\n\t</div>\r\n\t<div [hidden]=\"loading\">\r\n\t\t<canvas #skills width=\"800\"></canvas>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
@@ -912,7 +965,7 @@ module.exports = "<div id=\"skills\" class=\"p-grid\">\r\n\t\t<canvas #skills></
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#skills {\n  background-color: white;\n  width: 800px;\n  margin: auto; }\n\n.row {\n  /* IE10 */\n  display: flex;\n  /* IE10 */\n  flex-wrap: wrap;\n  padding: 0 4px; }\n\n/* Create four equal columns that sits next to each other */\n\n.column {\n  /* IE10 */\n  flex: 33%;\n  max-width: 33%;\n  padding: 0 4px;\n  margin: auto; }\n\n.column img {\n  margin-top: 8px;\n  vertical-align: middle; }\n\n/* Responsive layout - makes a two column-layout instead of four columns */\n\n@media screen and (max-width: 800px) {\n  .column {\n    flex: 50%;\n    max-width: 50%; } }\n\n/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */\n\n@media screen and (max-width: 600px) {\n  .column {\n    flex: 100%;\n    max-width: 100%; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2tpbGxzL3NraWxscy9EOlxcd2FtcDY0XFx3d3dcXHRoZW9waGFuZS1naXJhcmQvc3JjXFxhcHBcXHNraWxsc1xcc2tpbGxzXFxza2lsbHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFTSx3QkFBdUI7RUFDdkIsYUFBWTtFQUNaLGFBQVksRUFFakI7O0FBU0Q7RUFDNEIsVUFBVTtFQUNoQyxjQUFhO0VBQ1EsVUFBVTtFQUMvQixnQkFBZTtFQUNmLGVBQWMsRUFDakI7O0FBRUQsNERBQTREOztBQUM1RDtFQUNtQixVQUFVO0VBQ3pCLFVBQVM7RUFDVCxlQUFjO0VBQ2QsZUFBYztFQUNkLGFBQVksRUFDZjs7QUFFRDtFQUNJLGdCQUFlO0VBQ2YsdUJBQXNCLEVBQ3pCOztBQUVELDJFQUEyRTs7QUFDM0U7RUFDSTtJQUVJLFVBQVM7SUFDVCxlQUFjLEVBQ2pCLEVBQUE7O0FBR0wsd0dBQXdHOztBQUN4RztFQUNJO0lBRUksV0FBVTtJQUNWLGdCQUFlLEVBQ2xCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9za2lsbHMvc2tpbGxzL3NraWxscy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNza2lsbHNcclxueyAgIFxyXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICAgd2lkdGg6IDgwMHB4O1xyXG4gICAgICBtYXJnaW46IGF1dG87IFxyXG5cclxufVxyXG5cclxuLnNraWxscy1sb2dvXHJcbntcclxuICAgICAgLy8gd2lkdGg6IDIwMHB4O1xyXG4gICAgICAvLyBtYXJnaW46IGF1dG87XHJcbiAgICAgIC8vIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcblxyXG4ucm93IHtcclxuICAgICAgZGlzcGxheTogLW1zLWZsZXhib3g7IC8qIElFMTAgKi9cclxuICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgLW1zLWZsZXgtd3JhcDogd3JhcDsgLyogSUUxMCAqL1xyXG4gICAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICAgIHBhZGRpbmc6IDAgNHB4O1xyXG4gIH1cclxuICBcclxuICAvKiBDcmVhdGUgZm91ciBlcXVhbCBjb2x1bW5zIHRoYXQgc2l0cyBuZXh0IHRvIGVhY2ggb3RoZXIgKi9cclxuICAuY29sdW1uIHtcclxuICAgICAgLW1zLWZsZXg6IDMzJTsgLyogSUUxMCAqL1xyXG4gICAgICBmbGV4OiAzMyU7XHJcbiAgICAgIG1heC13aWR0aDogMzMlO1xyXG4gICAgICBwYWRkaW5nOiAwIDRweDtcclxuICAgICAgbWFyZ2luOiBhdXRvO1xyXG4gIH1cclxuICBcclxuICAuY29sdW1uIGltZyB7XHJcbiAgICAgIG1hcmdpbi10b3A6IDhweDtcclxuICAgICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICB9XHJcbiAgXHJcbiAgLyogUmVzcG9uc2l2ZSBsYXlvdXQgLSBtYWtlcyBhIHR3byBjb2x1bW4tbGF5b3V0IGluc3RlYWQgb2YgZm91ciBjb2x1bW5zICovXHJcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogODAwcHgpIHtcclxuICAgICAgLmNvbHVtbiB7XHJcbiAgICAgICAgICAtbXMtZmxleDogNTAlO1xyXG4gICAgICAgICAgZmxleDogNTAlO1xyXG4gICAgICAgICAgbWF4LXdpZHRoOiA1MCU7XHJcbiAgICAgIH1cclxuICB9XHJcbiAgXHJcbiAgLyogUmVzcG9uc2l2ZSBsYXlvdXQgLSBtYWtlcyB0aGUgdHdvIGNvbHVtbnMgc3RhY2sgb24gdG9wIG9mIGVhY2ggb3RoZXIgaW5zdGVhZCBvZiBuZXh0IHRvIGVhY2ggb3RoZXIgKi9cclxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgICAuY29sdW1uIHtcclxuICAgICAgICAgIC1tcy1mbGV4OiAxMDAlO1xyXG4gICAgICAgICAgZmxleDogMTAwJTtcclxuICAgICAgICAgIG1heC13aWR0aDogMTAwJTtcclxuICAgICAgfVxyXG4gIH0iXX0= */"
+module.exports = "#skills {\n  background-color: white;\n  width: 800px;\n  margin: auto; }\n\n@-webkit-keyframes ui-progress-spinner-color {\n  100%,\n  0% {\n    stroke: #00558e; } }\n\n@keyframes ui-progress-spinner-color {\n  100%,\n  0% {\n    stroke: #00558e; } }\n\n#skills-loader {\n  width: 800px;\n  height: 400px;\n  text-align: center;\n  line-height: 450px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2tpbGxzL3NraWxscy9EOlxcd2FtcDY0XFx3d3dcXHRoZW9waGFuZS1naXJhcmQvc3JjXFxhcHBcXHNraWxsc1xcc2tpbGxzXFxza2lsbHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFFTSx3QkFBdUI7RUFDdkIsYUFBWTtFQUNaLGFBQVksRUFFakI7O0FBRUQ7RUFFSTs7SUFFSSxnQkFBdUIsRUFBQSxFQUFBOztBQUovQjtFQUVJOztJQUVJLGdCQUF1QixFQUFBLEVBQUE7O0FBSS9CO0VBRUksYUFBWTtFQUNaLGNBQWE7RUFDYixtQkFBa0I7RUFDbEIsbUJBQWtCLEVBQ3JCIiwiZmlsZSI6InNyYy9hcHAvc2tpbGxzL3NraWxscy9za2lsbHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjc2tpbGxzXHJcbnsgICBcclxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgIHdpZHRoOiA4MDBweDtcclxuICAgICAgbWFyZ2luOiBhdXRvOyBcclxuXHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgdWktcHJvZ3Jlc3Mtc3Bpbm5lci1jb2xvciBcclxue1xyXG4gICAgMTAwJSxcclxuICAgIDAlIHtcclxuICAgICAgICBzdHJva2U6IHJnYigwLCA4NSwgMTQyKTtcclxuICAgIH1cclxufVxyXG5cclxuI3NraWxscy1sb2FkZXJcclxue1xyXG4gICAgd2lkdGg6IDgwMHB4O1xyXG4gICAgaGVpZ2h0OiA0MDBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGxpbmUtaGVpZ2h0OiA0NTBweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -944,27 +997,24 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var SkillsComponent = /** @class */ (function () {
     function SkillsComponent() {
-    }
-    SkillsComponent.prototype.ngOnInit = function () {
-    };
-    SkillsComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
-        var dataSet = [
-            {
-                data: [
-                    {
-                        x: -8,
-                        y: 8,
-                        r: 0
-                    },
-                    {
-                        x: 8,
-                        y: -8,
-                        r: 0
-                    },
-                ],
-            },
-        ];
+        this.dataSet =
+            [
+                {
+                    data: [
+                        {
+                            x: -8,
+                            y: 8,
+                            r: 0
+                        },
+                        {
+                            x: 8,
+                            y: -8,
+                            r: 0
+                        },
+                    ],
+                },
+            ];
         _skills_mock__WEBPACK_IMPORTED_MODULE_2__["skillLogos"].forEach(function (logo, index, skills) {
             var tmpImage = new Image();
             tmpImage.src = logo.src;
@@ -981,13 +1031,17 @@ var SkillsComponent = /** @class */ (function () {
                 ],
                 pointStyle: tmpImage
             };
-            dataSet.push(point);
+            _this.dataSet.push(point);
         });
+    }
+    SkillsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.loading = true;
         this.context = this.canvas.nativeElement.getContext('2d');
         this.chart = new chart_js__WEBPACK_IMPORTED_MODULE_1__["Chart"](this.context, {
             type: 'bubble',
             data: {
-                datasets: dataSet
+                datasets: this.dataSet
             },
             options: {
                 legend: {
@@ -1007,6 +1061,9 @@ var SkillsComponent = /** @class */ (function () {
                 }
             }
         });
+        var interval = setTimeout(function () {
+            _this.loading = false;
+        }, 1500);
     };
     /**
     * Conserve aspect ratio of the original region. Useful when shrinking/enlarging
